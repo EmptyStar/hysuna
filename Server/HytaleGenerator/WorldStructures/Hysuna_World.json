@@ -1,0 +1,36 @@
+{
+  "Type": "NoiseRange",
+  "Biomes": [
+    {
+      "Biome": "Hysuna_Glowing_Marsh",
+      "Min": -1,
+      "Max": 1
+    }
+  ],
+  "Framework" : [
+    {
+      "Type" : "DecimalConstants",
+      "Entries" : [
+        {
+          "Name" : "Base",
+          "Value" : 100
+        },
+        {
+          "Name" : "Water",
+          "Value" : 100
+        },
+        {
+          "Name" : "Bedrock",
+          "Value" : 0
+        }
+      ]
+    }
+  ],
+  "MaxBiomeEdgeDistance": 32,
+  "DefaultTransitionDistance": 32,
+  "DefaultBiome": "Hysuna_Glowing_Marsh",
+  "Density": {
+    "Type": "Imported",
+    "Name": "Biome-Map"
+  }
+}

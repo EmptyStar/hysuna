@@ -1,0 +1,168 @@
+{
+	"$NodeId": "Biome-a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+	"Terrain": {
+		"$NodeId": "Terrain-b2c3d4e5-f6a7-8901-bcde-f12345678901",
+		"Type": "DAOTerrain",
+		"Density": {
+			"$NodeId": "CurveMapper.Density-c3d4e5f6-a7b8-9012-cdef-123456789012",
+			"Type": "CurveMapper",
+			"Skip": false,
+			"Curve": {
+				"$NodeId": "ManualCurve-d4e5f6a7-b8c9-0123-def0-234567890123",
+				"Type": "Manual",
+				"Points": [{
+					"$NodeId": "CurvePoint-e5f6a7b8-c9d0-1234-ef01-345678901234",
+					"In": 0,
+					"Out": 1
+				}, {
+					"$NodeId": "CurvePoint-f6a7b8c9-d0e1-2345-f012-456789012345",
+					"In": 0.1,
+					"Out": -1
+				}]
+			},
+			"Inputs": [{
+				"$NodeId": "BaseHeight.Density-a7b8c9d0-e1f2-3456-0123-567890123456",
+				"Type": "BaseHeight",
+				"Skip": false,
+				"BaseHeightName": "Base",
+				"Distance": true
+			}]
+		}
+	},
+	"MaterialProvider": {
+		"$NodeId": "SolidityMaterialProvider-b8c9d0e1-f2a3-4567-1234-678901234567",
+		"Type": "Solidity",
+		"Solid": {
+			"$NodeId": "QueueMaterialProvider-c9d0e1f2-a3b4-5678-2345-789012345678",
+			"Type": "Queue",
+			"Queue": [{
+				"$NodeId": "SimpleHorizontalMaterialProvider-d0e1f2a3-b4c5-6789-3456-890123456789",
+				"Type": "SimpleHorizontal",
+				"TopY": 1,
+				"TopBaseHeight": "Bedrock",
+				"BottomY": 0,
+				"BottomBaseHeight": "Bedrock"
+			}, {
+				"$NodeId": "ConstantMaterialProvider-e1f2a3b4-c5d6-7890-4567-901234567890",
+				"Type": "Constant",
+				"Material": {
+					"$NodeId": "Material-f2a3b4c5-d6e7-8901-5678-012345678901",
+					"Solid": "Cloth_Block_Wool_Green"
+				}
+			}]
+		},
+		"Empty": {
+			"$NodeId": "QueueMaterialProvider-a3b4c5d6-e7f8-9012-6789-123456789012",
+			"Type": "Queue",
+			"Queue": [{
+				"$NodeId": "ConstantMaterialProvider-b4c5d6e7-f8a9-0123-7890-234567890123",
+				"$Comment": "REQUIRED",
+				"Type": "Constant",
+				"Material": {
+					"$NodeId": "Material-c5d6e7f8-a9b0-1234-8901-345678901234",
+					"Solid": "Empty"
+				}
+			}]
+		}
+	},
+	"$NodeEditorMetadata": {
+		"$Nodes": {
+			"Biome-a1b2c3d4-e5f6-7890-abcd-ef1234567890": {
+				"$Position": {
+					"$x": 0,
+					"$y": 0
+				},
+				"$Title": "[ROOT] Biome"
+			},
+			"Terrain-b2c3d4e5-f6a7-8901-bcde-f12345678901": {
+				"$Position": {
+					"$x": 651,
+					"$y": -416
+				}
+			},
+			"SolidityMaterialProvider-b8c9d0e1-f2a3-4567-1234-678901234567": {
+				"$Position": {
+					"$x": 1184,
+					"$y": 279
+				}
+			},
+			"QueueMaterialProvider-c9d0e1f2-a3b4-5678-2345-789012345678": {
+				"$Position": {
+					"$x": 1864,
+					"$y": 276
+				}
+			},
+			"SimpleHorizontalMaterialProvider-d0e1f2a3-b4c5-6789-3456-890123456789": {
+				"$Position": {
+					"$x": 2655,
+					"$y": 277
+				}
+			},
+			"ConstantMaterialProvider-e1f2a3b4-c5d6-7890-4567-901234567890": {
+				"$Position": {
+					"$x": 2591,
+					"$y": 1321
+				}
+			},
+			"Material-f2a3b4c5-d6e7-8901-5678-012345678901": {
+				"$Position": {
+					"$x": 3428,
+					"$y": 1316
+				}
+			},
+			"QueueMaterialProvider-a3b4c5d6-e7f8-9012-6789-123456789012": {
+				"$Position": {
+					"$x": 1944,
+					"$y": 1659
+				}
+			},
+			"ConstantMaterialProvider-b4c5d6e7-f8a9-0123-7890-234567890123": {
+				"$Position": {
+					"$x": 2587,
+					"$y": 1623
+				}
+			},
+			"Material-c5d6e7f8-a9b0-1234-8901-345678901234": {
+				"$Position": {
+					"$x": 3248,
+					"$y": 1628
+				}
+			},
+			"CurveMapper.Density-c3d4e5f6-a7b8-9012-cdef-123456789012": {
+				"$Position": {
+					"$x": 991,
+					"$y": -515
+				}
+			},
+			"ManualCurve-d4e5f6a7-b8c9-0123-def0-234567890123": {
+				"$Position": {
+					"$x": 1452,
+					"$y": -235
+				}
+			},
+			"CurvePoint-e5f6a7b8-c9d0-1234-ef01-345678901234": {
+				"$Position": {
+					"$x": 2230,
+					"$y": -291
+				}
+			},
+			"CurvePoint-f6a7b8c9-d0e1-2345-f012-456789012345": {
+				"$Position": {
+					"$x": 2242,
+					"$y": -130
+				}
+			},
+			"BaseHeight.Density-a7b8c9d0-e1f2-3456-0123-567890123456": {
+				"$Position": {
+					"$x": 1839,
+					"$y": -545
+				}
+			}
+		},
+		"$FloatingNodes": [],
+		"$Links": {},
+		"$Groups": [],
+		"$Comments": [],
+		"$WorkspaceID": "HytaleGenerator - Biome"
+	}
+}

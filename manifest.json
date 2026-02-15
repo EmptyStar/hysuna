@@ -1,0 +1,20 @@
+{
+  "Group": "Hysuna",
+  "Name": "Hysuna Biome Mod",
+  "Version": "1.0.1",
+  "Description": "A custom biome mod for Hytale",
+  "Authors": [
+    {
+      "Name": "EmptyStar",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}
