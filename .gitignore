@@ -1,4 +1,6 @@
 .claude
 .vscode
-example*
+examples
 Logs
+Docs
+CLAUDE.md
