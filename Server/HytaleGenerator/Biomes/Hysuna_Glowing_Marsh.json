@@ -320,7 +320,7 @@
 				"PointGenerator":	{
 					"$NodeId":	"MeshPointGenerator-mushroom3-cccc-dddd-eeee-ffff44445555",
 					"Type":	"Mesh",
-					"Jitter":	0.425,
+					"Jitter":	0.45,
 					"ScaleX":	75,
 					"ScaleY":	75,
 					"ScaleZ":	75,
@@ -330,7 +330,7 @@
 			"Assignments":	{
 				"$NodeId":	"Weighted.Assignments-mushroom4-dddd-eeee-ffff-000055556666",
 				"Type":	"Weighted",
-				"SkipChance":	0,
+				"SkipChance":	0.4,
 				"Seed":	"mushpick",
 				"WeightedAssignments":	[{
 						"$NodeId":	"WeightedEntry-giantmush-aaaa-bbbb-cccc-dddd11112222",
