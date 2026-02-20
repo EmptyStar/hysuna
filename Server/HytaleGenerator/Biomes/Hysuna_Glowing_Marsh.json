@@ -773,9 +773,9 @@
 					"$NodeId":	"MeshPointGenerator-grass3-cccc-dddd-eeee-ffff33334444",
 					"Type":	"Mesh",
 					"Jitter":	0.25,
-					"ScaleX":	28,
-					"ScaleY":	28,
-					"ScaleZ":	28,
+					"ScaleX":	27,
+					"ScaleY":	27,
+					"ScaleZ":	27,
 					"Seed":	"marshgrass"
 				}
 			},
@@ -786,7 +786,7 @@
 					"$NodeId":	"Cluster.Prop-grass5-eeee-ffff-0000-111155556666",
 					"Type":	"Cluster",
 					"Skip":	false,
-					"Range":	6,
+					"Range":	7,
 					"Seed":	"grasscluster",
 					"DistanceCurve":	{
 						"$NodeId":	"DistanceSCurve-grass6-aaaa-bbbb-cccc-dddd00001111",
@@ -794,12 +794,12 @@
 						"ExponentA": 0.25,
 						"ExponentB":	4,
 						"Transition":	0.5,
-						"TransitionSmooth":	0.0,
-						"Range":	6
+						"TransitionSmooth":	0.1,
+						"Range":	7
 					},
 					"WeightedProps":	[{
 							"$NodeId":	"Weighted.Cluster.Prop-grass9-dddd-eeee-ffff-000033334444",
-							"Weight":	1,
+							"Weight":	40,
 							"ColumnProp":	{
 								"$NodeId":	"Column.Prop-grassa-eeee-ffff-0000-111144445555",
 								"Type":	"Column",
@@ -861,6 +861,80 @@
 								},
 								"Scanner":	{
 									"$NodeId":	"ColumnLinear.Scanner-grassh-aaaa-bbbb-cccc-dddd00001111",
+									"Type":	"ColumnLinear",
+									"Skip":	false,
+									"MaxY":	5,
+									"MinY":	-5,
+									"RelativeToPosition":	true,
+									"BaseHeightName":	"Base",
+									"TopDownOrder":	true,
+									"ResultCap":	1
+								}
+							}
+						}, {
+							"$NodeId":	"Weighted.Cluster.Prop-grasstall-dddd-eeee-ffff-000044445555",
+							"Weight":	60,
+							"ColumnProp":	{
+								"$NodeId":	"Column.Prop-grasstalla-eeee-ffff-0000-111155556666",
+								"Type":	"Column",
+								"Skip":	false,
+								"ColumnBlocks":	[{
+										"$NodeId":	"Block.Column.Prop-grasstallb-ffff-0000-1111-222277778888",
+										"Y":	0,
+										"Material":	{
+											"$NodeId":	"Material-grasstallc-0000-1111-2222-333388889999",
+											"Solid":	"Plant_Grass_Lush_Tall"
+										}
+									}],
+								"BlockMask":	{
+									"$NodeId":	"BlockMask-grasstallbm-aaaa-bbbb-cccc-dddd22223333",
+									"DontReplace":	{
+										"$NodeId":	"BlockSet.BlockMask-grasstalldr-bbbb-cccc-dddd-eeee33334444",
+										"Inclusive":	true,
+										"Materials":	[{
+												"$NodeId":	"Material-grasstalldr1-cccc-dddd-eeee-ffff44445555",
+												"Fluid":	"Water_Source"
+											}]
+									}
+								},
+								"Directionality":	{
+									"$NodeId":	"Static.Directionality-grasstalld-1111-2222-3333-444488889999",
+									"Type":	"Static",
+									"Rotation":	0,
+									"Pattern":	{
+										"$NodeId":	"Floor.Pattern-grasstalle-2222-3333-4444-555599990000",
+										"Type":	"Floor",
+										"Skip":	false,
+										"Origin":	{
+											"$NodeId":	"BlockSet.Pattern-grasstallf-3333-4444-5555-6666aaaa0000",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-grasstallg-4444-5555-6666-7777bbbb0000",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-grasstallh-5555-6666-7777-8888cccc0000",
+														"Solid":	"Empty"
+													}]
+											}
+										},
+										"Floor":	{
+											"$NodeId":	"BlockSet.Pattern-grasstalli-6666-7777-8888-9999dddd0000",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-grasstallj-7777-8888-9999-aaaaeeeee000",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-grasstallk-8888-9999-aaaa-bbbbffff0000",
+														"Solid":	"Soil_Grass_Wet"
+													}]
+											}
+										}
+									}
+								},
+								"Scanner":	{
+									"$NodeId":	"ColumnLinear.Scanner-grasstalll-aaaa-bbbb-cccc-dddd11110000",
 									"Type":	"ColumnLinear",
 									"Skip":	false,
 									"MaxY":	5,
