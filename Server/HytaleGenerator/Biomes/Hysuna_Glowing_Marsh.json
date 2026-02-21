@@ -106,19 +106,19 @@
 									"Delimiters":	[{
 											"$NodeId":	"Delimiter-cccc3333-cccc-dddd-eeee-ffff22223333",
 											"From":	-1,
-											"To":	-0.8,
+											"To":	-0.6,
 											"Material":	{
 												"$NodeId":	"ConstantMaterialProvider-cccc3333-dddd-eeee-ffff-000033334444",
 												"Type":	"Constant",
 												"Material":	{
 													"$NodeId":	"Material-dddd4444-eeee-ffff-0000-111144445555",
-													"Solid":	"Plant_Moss_Block_Blue"
+													"Solid":	"Soil_Mud"
 												}
 											}
 										}, {
 											"$NodeId":	"Delimiter-8888ffff-9999-aaaa-bbbb-ccccffff0000",
-											"From":	-0.8,
-											"To":	0.8,
+											"From":	-0.6,
+											"To":	0.7,
 											"Material":	{
 												"$NodeId":	"ConstantMaterialProvider-9999-0000-aaaa-bbbb-cccc00001111",
 												"Type":	"Constant",
@@ -129,7 +129,7 @@
 											}
 										}, {
 											"$NodeId":	"Delimiter-bbbb2222-cccc-dddd-eeee-ffff22223333",
-											"From":	0.8,
+											"From":	0.7,
 											"To":	1,
 											"Material":	{
 												"$NodeId":	"ConstantMaterialProvider-cccc3333-dddd-eeee-ffff-000033334444",
@@ -1206,7 +1206,7 @@
 						"Points":	[{
 								"$NodeId":	"CurvePoint-cyanflower7-bbbb-cccc-dddd-eeee11112222",
 								"In":	0.01,
-								"Out":	0.05
+								"Out":	0.0425
 							}]
 					},
 					"WeightedProps":	[{
