@@ -1172,6 +1172,162 @@
 						}
 					}]
 			}
+		}, {
+			"$NodeId":	"Runtime-cyanflower1-aaaa-bbbb-cccc-dddd11112222",
+			"Skip":	false,
+			"Runtime":	0,
+			"Positions":	{
+				"$NodeId":	"Mesh2DPositions-cyanflower2-bbbb-cccc-dddd-eeee22223333",
+				"Type":	"Mesh2D",
+				"Skip":	false,
+				"PointsY":	0,
+				"PointGenerator":	{
+					"$NodeId":	"MeshPointGenerator-cyanflower3-cccc-dddd-eeee-ffff33334444",
+					"Type":	"Mesh",
+					"Jitter":	0.1,
+					"ScaleX":	75,
+					"ScaleY":	75,
+					"ScaleZ":	75,
+					"Seed":	"cyanflower"
+				}
+			},
+			"Assignments":	{
+				"$NodeId":	"Constant.Assignments-cyanflower4-dddd-eeee-ffff-000044445555",
+				"Type":	"Constant",
+				"Prop":	{
+					"$NodeId":	"Cluster.Prop-cyanflower5-eeee-ffff-0000-111155556666",
+					"Type":	"Cluster",
+					"Skip":	false,
+					"Range":	6,
+					"Seed":	"cyancluster",
+					"DistanceCurve":	{
+						"$NodeId":	"ManualCurve-cyanflower6-aaaa-bbbb-cccc-dddd00001111",
+						"Type":	"Manual",
+						"Points":	[{
+								"$NodeId":	"CurvePoint-cyanflower7-bbbb-cccc-dddd-eeee11112222",
+								"In":	0.01,
+								"Out":	0.05
+							}]
+					},
+					"WeightedProps":	[{
+							"$NodeId":	"Weighted.Cluster.Prop-cyanflower8-cccc-dddd-eeee-ffff22223333",
+							"Weight":	1,
+							"ColumnProp":	{
+								"$NodeId":	"Column.Prop-cyanflower9-dddd-eeee-ffff-000033334444",
+								"Type":	"Column",
+								"Skip":	false,
+								"ColumnBlocks":	[{
+										"$NodeId":	"Block.Column.Prop-cyanflowera-eeee-ffff-0000-111144445555",
+										"Y":	0,
+										"Material":	{
+											"$NodeId":	"Material-cyanflowerb-ffff-0000-1111-222255556666",
+											"Solid":	"Plant_Flower_Tall_Cyan"
+										}
+									}],
+								"BlockMask":	{
+									"$NodeId":	"BlockMask-cyanflowerbm-aaaa-bbbb-cccc-dddd66667777",
+									"DontReplace":	{
+										"$NodeId":	"BlockSet.BlockMask-cyanflowerdr-bbbb-cccc-dddd-eeee77778888",
+										"Inclusive":	true,
+										"Materials":	[{
+												"$NodeId":	"Material-cyanflowerdr1-cccc-dddd-eeee-ffff88889999",
+												"Fluid":	"Water_Source"
+											}]
+									}
+								},
+								"Directionality":	{
+									"$NodeId":	"Static.Directionality-cyanflowerc-1111-2222-3333-444499990000",
+									"Type":	"Static",
+									"Rotation":	0,
+									"Pattern":	{
+										"$NodeId":	"Floor.Pattern-cyanflowerd-2222-3333-4444-5555aaaa0000",
+										"Type":	"Floor",
+										"Skip":	false,
+										"Origin":	{
+											"$NodeId":	"BlockSet.Pattern-cyanflowere-3333-4444-5555-6666bbbb0000",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-cyanflowerf-4444-5555-6666-7777cccc0000",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-cyanflowerg-5555-6666-7777-8888dddd0000",
+														"Solid":	"Empty"
+													}]
+											}
+										},
+										"Floor":	{
+											"$NodeId":	"BlockSet.Pattern-cyanflowerh-6666-7777-8888-9999eeee0000",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-cyanfloweri-7777-8888-9999-aaaaffff0000",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-cyanflowerj-8888-9999-aaaa-bbbb00001111",
+														"Solid":	"Soil_Grass_Wet"
+													}]
+											}
+										}
+									}
+								},
+								"Scanner":	{
+									"$NodeId":	"ColumnLinear.Scanner-cyanflowerk-9999-aaaa-bbbb-cccc11112222",
+									"Type":	"ColumnLinear",
+									"Skip":	false,
+									"MaxY":	5,
+									"MinY":	-5,
+									"RelativeToPosition":	true,
+									"BaseHeightName":	"Base",
+									"TopDownOrder":	true,
+									"ResultCap":	1
+								}
+							}
+						}],
+					"Pattern":	{
+						"$NodeId":	"Floor.Pattern-cyanflowerp-bbbb-cccc-dddd-eeee33334444",
+						"Type":	"Floor",
+						"Skip":	false,
+						"Origin":	{
+							"$NodeId":	"BlockSet.Pattern-cyanflowerq-cccc-dddd-eeee-ffff44445555",
+							"Type":	"BlockSet",
+							"Skip":	false,
+							"BlockSet":	{
+								"$NodeId":	"BlockSet.BlockMask-cyanflowerr-dddd-eeee-ffff-000055556666",
+								"Inclusive":	true,
+								"Materials":	[{
+										"$NodeId":	"Material-cyanflowers-eeee-ffff-0000-111166667777",
+										"Solid":	"Empty"
+									}]
+							}
+						},
+						"Floor":	{
+							"$NodeId":	"BlockSet.Pattern-cyanflowert-ffff-0000-1111-222277778888",
+							"Type":	"BlockSet",
+							"Skip":	false,
+							"BlockSet":	{
+								"$NodeId":	"BlockSet.BlockMask-cyanfloweru-0000-1111-2222-333388889999",
+								"Inclusive":	true,
+								"Materials":	[{
+										"$NodeId":	"Material-cyanflowerv-1111-2222-3333-444499990000",
+										"Solid":	"Soil_Grass_Wet"
+									}]
+							}
+						}
+					},
+					"Scanner":	{
+						"$NodeId":	"ColumnLinear.Scanner-cyanflowerl-aaaa-bbbb-cccc-dddd22223333",
+						"Type":	"ColumnLinear",
+						"Skip":	false,
+						"MaxY":	30,
+						"MinY":	-5,
+						"RelativeToPosition":	false,
+						"BaseHeightName":	"Base",
+						"TopDownOrder":	true,
+						"ResultCap":	1
+					}
+				}
+			}
 		}],
 	"EnvironmentProvider":	{
 		"$NodeId":	"DensityDelimited.EnvironmentProvider-341e682a-ce47-473d-ac4f-1f587a49ab61",
