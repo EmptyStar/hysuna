@@ -482,10 +482,10 @@
 				"PointGenerator":	{
 					"$NodeId":	"MeshPointGenerator-blue3-7777-8888-9999-aaaaddddeeee",
 					"Type":	"Mesh",
-					"Jitter":	0.45,
-					"ScaleX":	80,
-					"ScaleY":	80,
-					"ScaleZ":	80,
+					"Jitter":	0.25,
+					"ScaleX":	70,
+					"ScaleY":	70,
+					"ScaleZ":	70,
 					"Seed":	"bluemush"
 				}
 			},
@@ -496,15 +496,15 @@
 					"$NodeId":	"Cluster.Prop-blue5-9999-aaaa-bbbb-ccccffff0000",
 					"Type":	"Cluster",
 					"Skip":	false,
-					"Range":	80,
+					"Range":	60,
 					"Seed":	"bluecluster",
 					"DistanceCurve":	{
 						"$NodeId":	"DistanceSCurve-blue6-aaaa-bbbb-cccc-dddd00001111",
 						"Type":	"DistanceS",
-						"ExponentA": 20,
-						"ExponentB": 4,
-						"Transition": 0.25,
-						"TransitionSmooth": 0.5,
+						"ExponentA": 32,
+						"ExponentB": 5,
+						"Transition": 0.5,
+						"TransitionSmooth": 0.75,
 						"Range": 60
 					},
 					"WeightedProps":	[{
