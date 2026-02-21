@@ -990,6 +990,188 @@
 					}
 				}
 			}
+		}, {
+			"$NodeId":	"Runtime-shortgrass1-aaaa-bbbb-cccc-dddd33334444",
+			"Skip":	false,
+			"Runtime":	0,
+			"Positions":	{
+				"$NodeId":	"Mesh2DPositions-shortgrass2-bbbb-cccc-dddd-eeee44445555",
+				"Type":	"Mesh2D",
+				"Skip":	false,
+				"PointsY":	0,
+				"PointGenerator":	{
+					"$NodeId":	"MeshPointGenerator-shortgrass3-cccc-dddd-eeee-ffff55556666",
+					"Type":	"Mesh",
+					"Jitter":	0.5,
+					"ScaleX":	3,
+					"ScaleY":	3,
+					"ScaleZ":	3,
+					"Seed":	"shortgrass"
+				}
+			},
+			"Assignments":	{
+				"$NodeId":	"Weighted.Assignments-shortgrass4-dddd-eeee-ffff-000066667777",
+				"Type":	"Weighted",
+				"SkipChance":	0,
+				"Seed":	"shortgrasspick",
+				"WeightedAssignments":	[{
+						"$NodeId":	"WeightedEntry-shortgrass-aaaa-bbbb-cccc-dddd77778888",
+						"Weight":	90,
+						"Assignments":	{
+							"$NodeId":	"Constant.Assignments-shortgrass4a-dddd-eeee-ffff-000077778888",
+							"Type":	"Constant",
+							"Prop":	{
+								"$NodeId":	"Column.Prop-shortgrass5-eeee-ffff-0000-111177778888",
+								"Type":	"Column",
+								"Skip":	false,
+								"ColumnBlocks":	[{
+										"$NodeId":	"Block.Column.Prop-shortgrass6-ffff-0000-1111-222288889999",
+										"Y":	0,
+										"Material":	{
+											"$NodeId":	"Material-shortgrass7-0000-1111-2222-33339999aaaa",
+											"Solid":	"Plant_Grass_Lush_Short"
+										}
+									}],
+								"BlockMask":	{
+									"$NodeId":	"BlockMask-shortgrassbm-aaaa-bbbb-cccc-dddd44445555",
+									"DontReplace":	{
+										"$NodeId":	"BlockSet.BlockMask-shortgrassdr-bbbb-cccc-dddd-eeee55556666",
+										"Inclusive":	true,
+										"Materials":	[{
+												"$NodeId":	"Material-shortgrassdr1-cccc-dddd-eeee-ffff66667777",
+												"Fluid":	"Water_Source"
+											}]
+									}
+								},
+								"Directionality":	{
+									"$NodeId":	"Static.Directionality-shortgrass8-1111-2222-3333-4444aaaabbbb",
+									"Type":	"Static",
+									"Rotation":	0,
+									"Pattern":	{
+										"$NodeId":	"Floor.Pattern-shortgrass9-2222-3333-4444-5555bbbbcccc",
+										"Type":	"Floor",
+										"Skip":	false,
+										"Origin":	{
+											"$NodeId":	"BlockSet.Pattern-shortgrassa-3333-4444-5555-6666ccccdddd",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-shortgrassb-4444-5555-6666-7777ddddeeee",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-shortgrassc-5555-6666-7777-8888eeeeffff",
+														"Solid":	"Empty"
+													}]
+											}
+										},
+										"Floor":	{
+											"$NodeId":	"BlockSet.Pattern-shortgrassd-6666-7777-8888-9999ffff0000",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-shortgrasse-7777-8888-9999-aaaa00001111",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-shortgrassf-8888-9999-aaaa-bbbb11112222",
+														"Solid":	"Soil_Grass_Wet"
+													}]
+											}
+										}
+									}
+								},
+								"Scanner":	{
+									"$NodeId":	"ColumnLinear.Scanner-shortgrassg-9999-aaaa-bbbb-cccc22223333",
+									"Type":	"ColumnLinear",
+									"Skip":	false,
+									"MaxY":	30,
+									"MinY":	-5,
+									"RelativeToPosition":	false,
+									"BaseHeightName":	"Base",
+									"TopDownOrder":	true,
+									"ResultCap":	1
+								}
+							}
+						}
+					}, {
+						"$NodeId":	"WeightedEntry-lushground-aaaa-bbbb-cccc-dddd88889999",
+						"Weight":	10,
+						"Assignments":	{
+							"$NodeId":	"Constant.Assignments-lushground4a-dddd-eeee-ffff-000088889999",
+							"Type":	"Constant",
+							"Prop":	{
+								"$NodeId":	"Column.Prop-lushground5-eeee-ffff-0000-111188889999",
+								"Type":	"Column",
+								"Skip":	false,
+								"ColumnBlocks":	[{
+										"$NodeId":	"Block.Column.Prop-lushground6-ffff-0000-1111-222299990000",
+										"Y":	0,
+										"Material":	{
+											"$NodeId":	"Material-lushground7-0000-1111-2222-3333aaaa0000",
+											"Solid":	"Plant_Grass_Lush"
+										}
+									}],
+								"BlockMask":	{
+									"$NodeId":	"BlockMask-lushgroundbm-aaaa-bbbb-cccc-dddd55556666",
+									"DontReplace":	{
+										"$NodeId":	"BlockSet.BlockMask-lushgrounddr-bbbb-cccc-dddd-eeee66667777",
+										"Inclusive":	true,
+										"Materials":	[{
+												"$NodeId":	"Material-lushgrounddr1-cccc-dddd-eeee-ffff77778888",
+												"Fluid":	"Water_Source"
+											}]
+									}
+								},
+								"Directionality":	{
+									"$NodeId":	"Static.Directionality-lushground8-1111-2222-3333-4444bbbbcccc",
+									"Type":	"Static",
+									"Rotation":	0,
+									"Pattern":	{
+										"$NodeId":	"Floor.Pattern-lushground9-2222-3333-4444-5555ccccdddd",
+										"Type":	"Floor",
+										"Skip":	false,
+										"Origin":	{
+											"$NodeId":	"BlockSet.Pattern-lushgrounda-3333-4444-5555-6666ddddeeee",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-lushgroundb-4444-5555-6666-7777eeeeffff",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-lushgroundc-5555-6666-7777-8888ffff0000",
+														"Solid":	"Empty"
+													}]
+											}
+										},
+										"Floor":	{
+											"$NodeId":	"BlockSet.Pattern-lushgroundd-6666-7777-8888-999900001111",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-lushgrounde-7777-8888-9999-aaaa11112222",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-lushgroundf-8888-9999-aaaa-bbbb22223333",
+														"Solid":	"Soil_Grass_Wet"
+													}]
+											}
+										}
+									}
+								},
+								"Scanner":	{
+									"$NodeId":	"ColumnLinear.Scanner-lushgroundg-9999-aaaa-bbbb-cccc33334444",
+									"Type":	"ColumnLinear",
+									"Skip":	false,
+									"MaxY":	30,
+									"MinY":	-5,
+									"RelativeToPosition":	false,
+									"BaseHeightName":	"Base",
+									"TopDownOrder":	true,
+									"ResultCap":	1
+								}
+							}
+						}
+					}]
+			}
 		}],
 	"EnvironmentProvider":	{
 		"$NodeId":	"DensityDelimited.EnvironmentProvider-341e682a-ce47-473d-ac4f-1f587a49ab61",
