@@ -308,10 +308,23 @@
 				}
 			},
 			"Assignments":	{
-				"$NodeId":	"Weighted.Assignments-mushroom4-dddd-eeee-ffff-000055556666",
-				"Type":	"Weighted",
-				"SkipChance":	0.375,
-				"Seed":	"mushpick",
+				"$NodeId":	"FieldFunction.Assignments-mush-ff01-aaaa-bbbb-cccc11112222",
+				"Type":	"FieldFunction",
+				"FieldFunction":	{
+					"$NodeId":	"ImportedDensityNode-mush-ff02-aaaa-bbbb-cccc22223333",
+					"Type":	"Imported",
+					"Skip":	false,
+					"Name":	"TerrainHeight"
+				},
+				"Delimiters":	[{
+						"$NodeId":	"Delimiter-mush-ff03-aaaa-bbbb-cccc33334444",
+						"Min":	0,
+						"Max":	0.525,
+						"Assignments":	{
+							"$NodeId":	"Weighted.Assignments-mushroom4-dddd-eeee-ffff-000055556666",
+							"Type":	"Weighted",
+							"SkipChance":	0.375,
+							"Seed":	"mushpick",
 				"WeightedAssignments":	[{
 						"$NodeId":	"WeightedEntry-giantmush-aaaa-bbbb-cccc-dddd11112222",
 						"Weight":	5,
@@ -447,6 +460,8 @@
 								"MoldingDirection":	"NONE",
 								"MoldingChildren":	false
 							}
+						}
+							}]
 						}
 					}]
 			}
