@@ -300,10 +300,10 @@
 				"PointGenerator":	{
 					"$NodeId":	"MeshPointGenerator-mushroom3-cccc-dddd-eeee-ffff44445555",
 					"Type":	"Mesh",
-					"Jitter":	0.375,
-					"ScaleX":	75,
-					"ScaleY":	75,
-					"ScaleZ":	75,
+					"Jitter":	0.225,
+					"ScaleX":	54,
+					"ScaleY":	54,
+					"ScaleZ":	54,
 					"Seed":	"marshmush"
 				}
 			},
@@ -323,11 +323,11 @@
 						"Assignments":	{
 							"$NodeId":	"Weighted.Assignments-mushroom4-dddd-eeee-ffff-000055556666",
 							"Type":	"Weighted",
-							"SkipChance":	0.375,
+							"SkipChance":	0.175,
 							"Seed":	"mushpick",
 				"WeightedAssignments":	[{
 						"$NodeId":	"WeightedEntry-giantmush-aaaa-bbbb-cccc-dddd11112222",
-						"Weight":	5,
+						"Weight":	4,
 						"Assignments":	{
 							"$NodeId":	"Constant.Assignments-giantmush4-dddd-eeee-ffff-000055556666",
 							"Type":	"Constant",
@@ -395,7 +395,7 @@
 						}
 					}, {
 						"$NodeId":	"WeightedEntry-medmush-aaaa-bbbb-cccc-dddd22223333",
-						"Weight":	95,
+						"Weight":	96,
 						"Assignments":	{
 							"$NodeId":	"Constant.Assignments-medmush4-dddd-eeee-ffff-000044445555",
 							"Type":	"Constant",
