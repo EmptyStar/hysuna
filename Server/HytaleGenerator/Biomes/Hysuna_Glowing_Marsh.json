@@ -441,7 +441,7 @@
 								"WeightedPrefabPaths":	[{
 										"$NodeId":	"WeightedPath-deadtree6a-ffff-0000-1111-222277778888",
 										"Path":	"Trees/Ash_twisted_Large",
-										"Weight":	46
+										"Weight":	44
 									}, {
 										"$NodeId":	"WeightedPath-deadtree6b-ffff-0000-1111-222288889999",
 										"Path":	"Trees/Ash_twisted_Giant",
@@ -449,7 +449,7 @@
 									}, {
 										"$NodeId":	"WeightedPath-deadtree6c-ffff-0000-1111-222288889999",
 										"Path":	"Mushroom_Medium_Overgrown",
-										"Weight":	4
+										"Weight":	6
 									}],
 								"LegacyPath":	false,
 								"LoadEntities":	true,
