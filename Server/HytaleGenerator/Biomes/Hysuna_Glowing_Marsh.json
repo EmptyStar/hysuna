@@ -114,11 +114,11 @@
 								"Out":	0
 							}, {
 								"$NodeId":	"CurvePoint-7ie388ff-ba71-c532-9876-ba1165432b54",
-								"In":	0.5,
+								"In":	0.49,
 								"Out":	0
 							}, {
 								"$NodeId":	"CurvePoint-8jf499ff-cb82-d643-a987-cb2276543c65",
-								"In":	0.7,
+								"In":	0.69,
 								"Out":	1
 							}, {
 								"$NodeId":	"CurvePoint-9kg5aaff-dc93-e754-ba98-dc3387654d76",
@@ -300,10 +300,10 @@
 				"PointGenerator":	{
 					"$NodeId":	"MeshPointGenerator-mushroom3-cccc-dddd-eeee-ffff44445555",
 					"Type":	"Mesh",
-					"Jitter":	0.225,
-					"ScaleX":	54,
-					"ScaleY":	54,
-					"ScaleZ":	54,
+					"Jitter":	0.3,
+					"ScaleX":	48,
+					"ScaleY":	48,
+					"ScaleZ":	48,
 					"Seed":	"marshmush"
 				}
 			},
@@ -477,10 +477,10 @@
 				"PointGenerator":	{
 					"$NodeId":	"MeshPointGenerator-deadtree3-cccc-dddd-eeee-ffff33334444",
 					"Type":	"Mesh",
-					"Jitter":	0.15,
-					"ScaleX":	28,
-					"ScaleY":	28,
-					"ScaleZ":	28,
+					"Jitter":	0.275,
+					"ScaleX":	40,
+					"ScaleY":	40,
+					"ScaleZ":	40,
 					"Seed":	"ridgetree"
 				}
 			},
@@ -495,7 +495,7 @@
 				},
 				"Delimiters":	[{
 						"$NodeId":	"Delimiter-deadtree-ff03-aaaa-bbbb-cccc33334444",
-						"Min":	0.675,
+						"Min":	0.55,
 						"Max":	1,
 						"Assignments":	{
 							"$NodeId":	"Constant.Assignments-deadtree4-dddd-eeee-ffff-000055556666",
@@ -580,10 +580,10 @@
 				"PointGenerator":	{
 					"$NodeId":	"MeshPointGenerator-trunkmush3-cccc-dddd-eeee-ffff44445566",
 					"Type":	"Mesh",
-					"Jitter":	0.15,
-					"ScaleX":	28,
-					"ScaleY":	28,
-					"ScaleZ":	28,
+					"Jitter":	0.275,
+					"ScaleX":	40,
+					"ScaleY":	40,
+					"ScaleZ":	40,
 					"Seed":	"ridgetree"
 				}
 			},
@@ -598,7 +598,7 @@
 				},
 				"Delimiters":	[{
 						"$NodeId":	"Delimiter-trunkmush-ff03-aaaa-bbbb-cccc55556677",
-						"Min":	0.675,
+						"Min":	0.55,
 						"Max":	1,
 						"Assignments":	{
 							"$NodeId":	"Constant.Assignments-trunkmush4-dddd-eeee-ffff-000066667788",
@@ -859,7 +859,7 @@
 				"PointGenerator":	{
 					"$NodeId":	"MeshPointGenerator-blue3-7777-8888-9999-aaaaddddeeee",
 					"Type":	"Mesh",
-					"Jitter":	0.25,
+					"Jitter":	0.225,
 					"ScaleX":	70,
 					"ScaleY":	70,
 					"ScaleZ":	70,
@@ -873,7 +873,7 @@
 					"$NodeId":	"Cluster.Prop-blue5-9999-aaaa-bbbb-ccccffff0000",
 					"Type":	"Cluster",
 					"Skip":	false,
-					"Range":	60,
+					"Range":	64,
 					"Seed":	"bluecluster",
 					"DistanceCurve":	{
 						"$NodeId":	"DistanceSCurve-blue6-aaaa-bbbb-cccc-dddd00001111",
@@ -882,7 +882,7 @@
 						"ExponentB": 5,
 						"Transition": 0.5,
 						"TransitionSmooth": 0.75,
-						"Range": 60
+						"Range": 64
 					},
 					"WeightedProps":	[{
 							"$NodeId":	"Weighted.Cluster.Prop-blue9-dddd-eeee-ffff-000033334444",
@@ -1018,16 +1018,16 @@
 					"$NodeId":	"Cluster.Prop-orange5-9999-aaaa-bbbb-cccc00001111",
 					"Type":	"Cluster",
 					"Skip":	false,
-					"Range":	20,
+					"Range":	24,
 					"Seed":	"orangecluster",
 					"DistanceCurve":	{
 						"$NodeId":	"DistanceSCurve-orange6-aaaa-bbbb-cccc-dddd11112222",
 						"Type":	"DistanceS",
-						"ExponentA": 16,
+						"ExponentA": 18,
 						"ExponentB": 4,
 						"Transition": 0.25,
 						"TransitionSmooth": 0.5,
-						"Range": 20
+						"Range": 24
 					},
 					"WeightedProps":	[{
 							"$NodeId":	"Weighted.Cluster.Prop-orange9-dddd-eeee-ffff-000044445555",
@@ -1171,7 +1171,7 @@
 						"Points":	[{
 								"$NodeId":	"CurvePoint-bushyblue7-bbbb-cccc-dddd-eeee11112222",
 								"In":	0,
-								"Out":	0.9
+								"Out":	0.725
 							}]
 					},
 					"WeightedProps":	[{
