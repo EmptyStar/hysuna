@@ -337,7 +337,7 @@
 								"Skip":	false,
 								"WeightedPrefabPaths":	[{
 										"$NodeId":	"WeightedPath.Prefab.Prop-giantmush6-ffff-0000-1111-222277778888",
-										"Path":	"Mushroom_Giant",
+										"Path":	"Mushroom_Giant_Overgrown",
 										"Weight":	100
 									}],
 								"LegacyPath":	false,
@@ -405,7 +405,7 @@
 								"Skip":	false,
 								"WeightedPrefabPaths":	[{
 										"$NodeId":	"WeightedPath.Prefab.Prop-medmush6-ffff-0000-1111-222266667777",
-										"Path":	"Mushroom_Medium",
+										"Path":	"Mushroom_Medium_Overgrown",
 										"Weight":	100
 									}],
 								"LegacyPath":	false,
