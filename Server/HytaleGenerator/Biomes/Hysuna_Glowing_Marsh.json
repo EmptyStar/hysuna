@@ -321,125 +321,57 @@
 						"Min":	0,
 						"Max":	0.525,
 						"Assignments":	{
-							"$NodeId":	"Weighted.Assignments-mushroom4-dddd-eeee-ffff-000055556666",
-							"Type":	"Weighted",
-							"SkipChance":	0.175,
-							"Seed":	"mushpick",
-				"WeightedAssignments":	[{
-						"$NodeId":	"WeightedEntry-giantmush-aaaa-bbbb-cccc-dddd11112222",
-						"Weight":	4,
-						"Assignments":	{
-							"$NodeId":	"Constant.Assignments-giantmush4-dddd-eeee-ffff-000055556666",
+							"$NodeId":	"Constant.Assignments-mushroom4-dddd-eeee-ffff-000055556666",
 							"Type":	"Constant",
 							"Prop":	{
-								"$NodeId":	"Prefab.Prop-giantmush5-eeee-ffff-0000-111166667777",
+								"$NodeId":	"Prefab.Prop-mushroom5-eeee-ffff-0000-111166667777",
 								"Type":	"Prefab",
 								"Skip":	false,
 								"WeightedPrefabPaths":	[{
 										"$NodeId":	"WeightedPath.Prefab.Prop-giantmush6-ffff-0000-1111-222277778888",
 										"Path":	"Mushroom_Giant_Overgrown",
-										"Weight":	100
-									}],
-								"LegacyPath":	false,
-								"LoadEntities":	true,
-								"Directionality":	{
-									"$NodeId":	"Random.Directionality-giantmush7-0000-1111-2222-333388889999",
-									"Type":	"Random",
-									"Seed":	"giantmushdir",
-									"Pattern":	{
-										"$NodeId":	"Floor.Pattern-giantmush8-1111-2222-3333-44449999aaaa",
-										"Type":	"Floor",
-										"Skip":	false,
-										"Origin":	{
-											"$NodeId":	"BlockSet.Pattern-giantmush9-2222-3333-4444-5555aaaabbbb",
-											"Type":	"BlockSet",
-											"Skip":	false,
-											"BlockSet":	{
-												"$NodeId":	"BlockSet.BlockMask-giantmusha-3333-4444-5555-6666bbbbcccc",
-												"Inclusive":	true,
-												"Materials":	[{
-														"$NodeId":	"Material-giantmushb-4444-5555-6666-7777ccccdddd",
-														"Solid":	"Empty"
-													}]
-											}
-										},
-										"Floor":	{
-											"$NodeId":	"BlockSet.Pattern-giantmushc-5555-6666-7777-8888ddddeeee",
-											"Type":	"BlockSet",
-											"Skip":	false,
-											"BlockSet":	{
-												"$NodeId":	"BlockSet.BlockMask-giantmushd-6666-7777-8888-9999eeeeffff",
-												"Inclusive":	true,
-												"Materials":	[{
-														"$NodeId":	"Material-giantmushe-7777-8888-9999-aaaaffff0000",
-														"Solid":	"Soil_Grass_Wet"
-													}]
-											}
-										}
-									}
-								},
-								"Scanner":	{
-									"$NodeId":	"ColumnLinear.Scanner-giantmushf-8888-9999-aaaa-bbbb00001111",
-									"Type":	"ColumnLinear",
-									"Skip":	false,
-									"MaxY":	30,
-									"MinY":	-5,
-									"RelativeToPosition":	false,
-									"BaseHeightName":	"Base",
-									"TopDownOrder":	true,
-									"ResultCap":	1
-								},
-								"MoldingDirection":	"NONE",
-								"MoldingChildren":	false
-							}
-						}
-					}, {
-						"$NodeId":	"WeightedEntry-medmush-aaaa-bbbb-cccc-dddd22223333",
-						"Weight":	96,
-						"Assignments":	{
-							"$NodeId":	"Constant.Assignments-medmush4-dddd-eeee-ffff-000044445555",
-							"Type":	"Constant",
-							"Prop":	{
-								"$NodeId":	"Prefab.Prop-medmush5-eeee-ffff-0000-111155556666",
-								"Type":	"Prefab",
-								"Skip":	false,
-								"WeightedPrefabPaths":	[{
+										"Weight":	4
+									}, {
 										"$NodeId":	"WeightedPath.Prefab.Prop-medmush6-ffff-0000-1111-222266667777",
 										"Path":	"Mushroom_Medium_Overgrown",
-										"Weight":	100
+										"Weight":	78.5
+									}, {
+										"$NodeId":	"WeightedPath.Prefab.Prop-nonemush6-ffff-0000-1111-222255558888",
+										"Path":	"None",
+										"Weight":	17.5
 									}],
 								"LegacyPath":	false,
 								"LoadEntities":	true,
 								"Directionality":	{
-									"$NodeId":	"Random.Directionality-medmush7-0000-1111-2222-333377778888",
+									"$NodeId":	"Random.Directionality-mushroom7-0000-1111-2222-333388889999",
 									"Type":	"Random",
-									"Seed":	"medmushdir",
+									"Seed":	"mushdir",
 									"Pattern":	{
-										"$NodeId":	"Floor.Pattern-medmush8-1111-2222-3333-444488889999",
+										"$NodeId":	"Floor.Pattern-mushroom8-1111-2222-3333-44449999aaaa",
 										"Type":	"Floor",
 										"Skip":	false,
 										"Origin":	{
-											"$NodeId":	"BlockSet.Pattern-medmush9-2222-3333-4444-55559999aaaa",
+											"$NodeId":	"BlockSet.Pattern-mushroom9-2222-3333-4444-5555aaaabbbb",
 											"Type":	"BlockSet",
 											"Skip":	false,
 											"BlockSet":	{
-												"$NodeId":	"BlockSet.BlockMask-medmusha-3333-4444-5555-6666aaaabbbb",
+												"$NodeId":	"BlockSet.BlockMask-mushrooma-3333-4444-5555-6666bbbbcccc",
 												"Inclusive":	true,
 												"Materials":	[{
-														"$NodeId":	"Material-medmushb-4444-5555-6666-7777bbbbcccc",
+														"$NodeId":	"Material-mushroomb-4444-5555-6666-7777ccccdddd",
 														"Solid":	"Empty"
 													}]
 											}
 										},
 										"Floor":	{
-											"$NodeId":	"BlockSet.Pattern-medmushc-5555-6666-7777-8888ccccdddd",
+											"$NodeId":	"BlockSet.Pattern-mushroomc-5555-6666-7777-8888ddddeeee",
 											"Type":	"BlockSet",
 											"Skip":	false,
 											"BlockSet":	{
-												"$NodeId":	"BlockSet.BlockMask-medmushd-6666-7777-8888-9999ddddeeee",
+												"$NodeId":	"BlockSet.BlockMask-mushroomd-6666-7777-8888-9999eeeeffff",
 												"Inclusive":	true,
 												"Materials":	[{
-														"$NodeId":	"Material-medmushe-7777-8888-9999-aaaaeeeeffff",
+														"$NodeId":	"Material-mushroome-7777-8888-9999-aaaaffff0000",
 														"Solid":	"Soil_Grass_Wet"
 													}]
 											}
@@ -447,7 +379,7 @@
 									}
 								},
 								"Scanner":	{
-									"$NodeId":	"ColumnLinear.Scanner-medmushf-8888-9999-aaaa-bbbbffff0000",
+									"$NodeId":	"ColumnLinear.Scanner-mushroomf-8888-9999-aaaa-bbbb00001111",
 									"Type":	"ColumnLinear",
 									"Skip":	false,
 									"MaxY":	30,
@@ -460,8 +392,6 @@
 								"MoldingDirection":	"NONE",
 								"MoldingChildren":	false
 							}
-						}
-							}]
 						}
 					}]
 			}
