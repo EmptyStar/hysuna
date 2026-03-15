@@ -864,6 +864,9 @@
 												"Materials":	[{
 														"$NodeId":	"Material-bluek-8888-9999-aaaa-bbbbeeeeffff",
 														"Solid":	"Soil_Grass_Wet"
+												}, {
+														"$NodeId":	"Material-bluel-9999-aaaa-bbbb-ccccffff0000",
+														"Solid":	"Wood_Ash_Trunk_Full"
 													}]
 											}
 										}
@@ -1009,6 +1012,9 @@
 												"Materials":	[{
 														"$NodeId":	"Material-orangek-8888-9999-aaaa-bbbbffff0000",
 														"Solid":	"Soil_Grass_Wet"
+													}, {
+														"$NodeId":	"Material-orangel-9999-aaaa-bbbb-cccc66661144",
+														"Solid":	"Wood_Ash_Trunk_Full"
 													}]
 											}
 										}
