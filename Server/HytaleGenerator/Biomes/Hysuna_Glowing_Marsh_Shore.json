@@ -1037,7 +1037,7 @@
 				"Seed":	"shortgrasspick",
 				"WeightedAssignments":	[{
 						"$NodeId":	"WeightedEntry-shortgrass-aaaa-bbbb-cccc-dddd77778888",
-						"Weight":	90,
+						"Weight":	88,
 						"Assignments":	{
 							"$NodeId":	"Constant.Assignments-shortgrass4a-dddd-eeee-ffff-000077778888",
 							"Type":	"Constant",
@@ -1115,7 +1115,7 @@
 						}
 					}, {
 						"$NodeId":	"WeightedEntry-lushground-aaaa-bbbb-cccc-dddd88889999",
-						"Weight":	10,
+						"Weight":	9,
 						"Assignments":	{
 							"$NodeId":	"Constant.Assignments-lushground4a-dddd-eeee-ffff-000088889999",
 							"Type":	"Constant",
@@ -1180,6 +1180,84 @@
 								},
 								"Scanner":	{
 									"$NodeId":	"ColumnLinear.Scanner-lushgroundg-9999-aaaa-bbbb-cccc33334444",
+									"Type":	"ColumnLinear",
+									"Skip":	false,
+									"MaxY":	30,
+									"MinY":	-5,
+									"RelativeToPosition":	false,
+									"BaseHeightName":	"Base",
+									"TopDownOrder":	true,
+									"ResultCap":	1
+								}
+							}
+						}
+					}, {
+						"$NodeId":	"WeightedEntry-gnarledtall-aaaa-bbbb-cccc-dddd99990000",
+						"Weight":	3,
+						"Assignments":	{
+							"$NodeId":	"Constant.Assignments-gnarledtall4a-dddd-eeee-ffff-000099990000",
+							"Type":	"Constant",
+							"Prop":	{
+								"$NodeId":	"Column.Prop-gnarledtall5-eeee-ffff-0000-111199990000",
+								"Type":	"Column",
+								"Skip":	false,
+								"ColumnBlocks":	[{
+										"$NodeId":	"Block.Column.Prop-gnarledtall6-ffff-0000-1111-222299990000",
+										"Y":	0,
+										"Material":	{
+											"$NodeId":	"Material-gnarledtall7-0000-1111-2222-333399990000",
+											"Solid":	"Plant_Grass_Gnarled_Tall"
+										}
+									}],
+								"BlockMask":	{
+									"$NodeId":	"BlockMask-gnarledtallbm-aaaa-bbbb-cccc-dddd99990000",
+									"DontReplace":	{
+										"$NodeId":	"BlockSet.BlockMask-gnarledtalldr-bbbb-cccc-dddd-eeee99990000",
+										"Inclusive":	true,
+										"Materials":	[{
+												"$NodeId":	"Material-gnarledtalldr1-cccc-dddd-eeee-ffff99990000",
+												"Fluid":	"Water_Source"
+											}]
+									}
+								},
+								"Directionality":	{
+									"$NodeId":	"Static.Directionality-gnarledtall8-1111-2222-3333-444499990000",
+									"Type":	"Static",
+									"Rotation":	0,
+									"Pattern":	{
+										"$NodeId":	"Floor.Pattern-gnarledtall9-2222-3333-4444-555599990000",
+										"Type":	"Floor",
+										"Skip":	false,
+										"Origin":	{
+											"$NodeId":	"BlockSet.Pattern-gnarledtalla-3333-4444-5555-666699990000",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-gnarledtallb-4444-5555-6666-777799990000",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-gnarledtallc-5555-6666-7777-888899990000",
+														"Solid":	"Empty"
+													}]
+											}
+										},
+										"Floor":	{
+											"$NodeId":	"BlockSet.Pattern-gnarledtalld-6666-7777-8888-999999990000",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-gnarledtalle-7777-8888-9999-aaaa99990000",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-gnarledtallf-8888-9999-aaaa-bbbb99990000",
+														"Solid":	"Soil_Grass_Wet"
+													}]
+											}
+										}
+									}
+								},
+								"Scanner":	{
+									"$NodeId":	"ColumnLinear.Scanner-gnarledtallg-9999-aaaa-bbbb-cccc99990000",
 									"Type":	"ColumnLinear",
 									"Skip":	false,
 									"MaxY":	30,
