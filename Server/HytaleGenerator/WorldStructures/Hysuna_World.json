@@ -4,7 +4,22 @@
     {
       "Biome": "Hysuna_Glowing_Marsh",
       "Min": -1,
-      "Max": 1
+      "Max": -0.5
+    },
+    {
+      "Biome": "Hysuna_Glowing_Marsh_River",
+      "Min": -0.5,
+      "Max": 0
+    },
+    {
+      "Biome": "Hysuna_Glowing_Marsh_Shore",
+      "Min": 0,
+      "Max": 0.15
+    },
+    {
+      "Biome": "Oceans",
+      "Min": 0.15,
+      "Max": 2
     }
   ],
   "Framework" : [
