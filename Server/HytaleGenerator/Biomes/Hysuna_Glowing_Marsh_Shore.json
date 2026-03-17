@@ -239,18 +239,61 @@
 						"$NodeId":	"SpaceAndDepthMaterialProvider-e7f8a9b0-c1d2-3456-efab-567890123457",
 						"Type":	"SpaceAndDepth",
 						"LayerContext":	"DEPTH_INTO_FLOOR",
-						"MaxExpectedDepth":	2,
+						"MaxExpectedDepth":	3,
 						"Layers":	[{
-								"$NodeId":	"ConstantThicknessLayerSADMP-f8a9b0c1-d2e3-4567-fabc-678901234568",
+								"$NodeId":	"ConstantThicknessLayerSADMP-layer3-aaaa-bbbb-cccc-dddd5555",
 								"Type":	"ConstantThickness",
 								"Thickness":	1,
 								"Material":	{
-									"$NodeId":	"ConstantMaterialProvider-a9b0c1d2-e3f4-5678-abcd-789012345679",
-									"Type":	"Constant",
-									"Material":	{
-										"$NodeId":	"Material-b0c1d2e3-f4a5-6789-bcde-890123456780",
-										"Solid":	"Soil_Grass_Wet"
-									}
+									"$NodeId":	"FieldFunctionMaterialProvider-6666dddd-7777-8888-9999-aaaaddddeeee",
+									"Type":	"FieldFunction",
+									"FieldFunction":	{
+										"$NodeId":	"SimplexNoise2DDensityNode-7777eeee-8888-9999-aaaa-bbbbeeeeffff",
+										"Type":	"SimplexNoise2D",
+										"Skip":	false,
+										"Lacunarity":	2,
+										"Persistence":	0.5,
+										"Octaves":	2,
+										"Scale":	30,
+										"Seed":	"mud"
+									},
+									"Delimiters":	[{
+											"$NodeId":	"Delimiter-cccc3333-cccc-dddd-eeee-ffff22223333",
+											"From":	-1,
+											"To":	-0.6,
+											"Material":	{
+												"$NodeId":	"ConstantMaterialProvider-cccc3333-dddd-eeee-ffff-000033334444",
+												"Type":	"Constant",
+												"Material":	{
+													"$NodeId":	"Material-dddd4444-eeee-ffff-0000-111144445555",
+													"Solid":	"Soil_Mud"
+												}
+											}
+										}, {
+											"$NodeId":	"Delimiter-8888ffff-9999-aaaa-bbbb-ccccffff0000",
+											"From":	-0.6,
+											"To":	0.7,
+											"Material":	{
+												"$NodeId":	"ConstantMaterialProvider-9999-0000-aaaa-bbbb-cccc00001111",
+												"Type":	"Constant",
+												"Material":	{
+													"$NodeId":	"Material-aaaa1111-bbbb-cccc-dddd-eeee11112222",
+													"Solid":	"Soil_Grass_Wet"
+												}
+											}
+										}, {
+											"$NodeId":	"Delimiter-bbbb2222-cccc-dddd-eeee-ffff22223333",
+											"From":	0.7,
+											"To":	1,
+											"Material":	{
+												"$NodeId":	"ConstantMaterialProvider-cccc3333-dddd-eeee-ffff-000033334444",
+												"Type":	"Constant",
+												"Material":	{
+													"$NodeId":	"Material-dddd4444-eeee-ffff-0000-111144445555",
+													"Solid":	"Soil_Mud"
+												}
+											}
+										}]
 								}
 							}, {
 								"$NodeId":	"ConstantThicknessLayerSADMP-c1d2e3f4-a5b6-7890-cdef-901234567891",
