@@ -246,7 +246,7 @@
 									"Type":	"Constant",
 									"Material":	{
 										"$NodeId":	"Material-layer6-aaaa-bbbb-cccc-ddddeeee8888",
-										"Solid":	"Soil_Dirt"
+										"Solid":	"Soil_Dirt_Wet"
 									}
 								}
 							}]
@@ -721,7 +721,7 @@
 								"Solid":	"Plant_Moss_Block_Blue"
 							}, {
 								"$NodeId":	"Material-pond9d-2222-3333-4444-55559999aadd",
-								"Solid":	"Soil_Dirt"
+								"Solid":	"Soil_Dirt_Wet"
 							}, {
 								"$NodeId":	"Material-pond9e-2222-3333-4444-55559999aaee",
 								"Solid":	"Rock_Stone"
