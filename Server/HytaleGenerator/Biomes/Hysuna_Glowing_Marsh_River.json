@@ -8,496 +8,248 @@
 			"$NodeId":	"Mix.Density-3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
 			"Type":	"Mix",
 			"Skip":	false,
-			"Inputs":	[{
-					"$NodeId":	"MaxDensityNode-4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
-					"Type":	"Max",
+			"Inputs":	[
+				{
+					"$NodeId":	"SumDensityNode-river-terrain-0001-0002-0003-0004-0005",
+					"Type":	"Sum",
 					"Skip":	false,
-					"Inputs":	[{
-							"$NodeId":	"MinDensityNode-5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
-							"Type":	"Min",
-							"Skip":	false,
-							"Inputs":	[{
-									"$NodeId":	"MaxDensityNode-6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
-									"Type":	"Max",
-									"Skip":	false,
-									"Inputs":	[{
-											"$NodeId":	"Mix.Density-7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
-											"Type":	"Mix",
-											"Skip":	false,
-											"Inputs":	[{
-													"$NodeId":	"SumDensityNode-8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
-													"Type":	"Sum",
-													"Skip":	false,
-													"Inputs":	[{
-															"$NodeId":	"NormalizerDensityNode-9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
-															"Type":	"Normalizer",
-															"Skip":	false,
-															"FromMin":	-1,
-															"FromMax":	1,
-															"ToMin":	-0.3,
-															"ToMax":	0.3,
-															"Inputs":	[{
-																	"$NodeId":	"SimplexNoise2DDensityNode-0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
-																	"Type":	"SimplexNoise2D",
-																	"Skip":	false,
-																	"Lacunarity":	2,
-																	"Persistence":	0.5,
-																	"Octaves":	1,
-																	"Scale":	20,
-																	"Seed":	"A"
-																}]
-														}, {
-															"$NodeId":	"NormalizerDensityNode-1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
-															"Type":	"Normalizer",
-															"Skip":	false,
-															"FromMin":	-1,
-															"FromMax":	1,
-															"ToMin":	-0.7,
-															"ToMax":	0.7,
-															"Inputs":	[{
-																	"$NodeId":	"YOverride.Density-2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
-																	"Type":	"YOverride",
-																	"Skip":	false,
-																	"Value":	0,
-																	"Inputs":	[{
-																			"$NodeId":	"Cache.Density-3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
-																			"Type":	"Cache",
-																			"Skip":	false,
-																			"Capacity":	1,
-																			"Inputs":	[{
-																					"$NodeId":	"PositionsCellNoiseDensityNode-4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
-																					"Type":	"PositionsCellNoise",
-																					"Skip":	false,
-																					"MaxDistance":	10,
-																					"Positions":	{
-																						"$NodeId":	"FieldFunctionPositions-5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
-																						"Type":	"FieldFunction",
-																						"Skip":	false,
-																						"FieldFunction":	{
-																							"$NodeId":	"ImportedDensityNode-6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
-																							"Type":	"Imported",
-																							"Skip":	false,
-																							"Name":	"World-River-Map"
-																						},
-																						"Delimiters":	[{
-																								"$NodeId":	"Delimiter-7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
-																								"Min":	-1,
-																								"Max":	0.9
-																							}],
-																						"Positions":	{
-																							"$NodeId":	"FieldFunctionPositions-8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b3c",
-																							"Type":	"FieldFunction",
-																							"Skip":	false,
-																							"FieldFunction":	{
-																								"$NodeId":	"SimplexNoise2DDensityNode-9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
-																								"Type":	"SimplexNoise2D",
-																								"Skip":	false,
-																								"Lacunarity":	10,
-																								"Persistence":	0.1,
-																								"Octaves":	2,
-																								"Scale":	100,
-																								"Seed":	"Marsh_Sink_Holes_Mask"
-																							},
-																							"Delimiters":	[{
-																									"$NodeId":	"Delimiter-0b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
-																									"Min":	0.5,
-																									"Max":	1
-																								}],
-																							"Positions":	{
-																								"$NodeId":	"Mesh2DPositions-1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
-																								"Type":	"Mesh2D",
-																								"Skip":	false,
-																								"PointsY":	0,
-																								"PointGenerator":	{
-																									"$NodeId":	"MeshPointGenerator-2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6f7a",
-																									"Type":	"Mesh",
-																									"Jitter":	0.2,
-																									"ScaleX":	25,
-																									"ScaleY":	25,
-																									"ScaleZ":	25,
-																									"Seed":	"B"
-																								}
-																							}
-																						}
-																					},
-																					"ReturnType":	{
-																						"$NodeId":	"CurvePCNReturnType-3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b",
-																						"Type":	"Curve",
-																						"Curve":	{
-																							"$NodeId":	"ManualCurve-4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c",
-																							"Type":	"Manual",
-																							"Points":	[{
-																									"$NodeId":	"CurvePoint-5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9c0d",
-																									"In":	18,
-																									"Out":	1
-																								}, {
-																									"$NodeId":	"CurvePoint-6b7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d1e",
-																									"In":	0,
-																									"Out":	-1
-																								}]
-																						}
-																					},
-																					"DistanceFunction":	{
-																						"$NodeId":	"PCNDistanceFunction-7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
-																						"Type":	"Euclidean"
-																					}
-																				}]
-																		}]
-																}]
-														}, {
-															"$NodeId":	"CurveMapper.Density-8d9e0f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a",
-															"Type":	"CurveMapper",
-															"Skip":	false,
-															"Curve":	{
-																"$NodeId":	"ManualCurve-9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
-																"Type":	"Manual",
-																"Points":	[{
-																		"$NodeId":	"CurvePoint-0f1a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
-																		"In":	-5,
-																		"Out":	-0.4
-																	}, {
-																		"$NodeId":	"CurvePoint-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6e",
-																		"In":	5,
-																		"Out":	0
-																	}]
-															},
-															"Inputs":	[{
-																	"$NodeId":	"BaseHeight.Density-2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7f",
-																	"Type":	"BaseHeight",
-																	"Skip":	false,
-																	"BaseHeightName":	"Water",
-																	"Distance":	true
-																}]
-														}]
-												}, {
-													"$NodeId":	"SumDensityNode-3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e90",
-													"Type":	"Sum",
-													"Skip":	false,
-													"Inputs":	[{
-															"$NodeId":	"NormalizerDensityNode-4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8fa1",
-															"Type":	"Normalizer",
-															"Skip":	false,
-															"FromMin":	-1,
-															"FromMax":	1,
-															"ToMin":	0,
-															"ToMax":	0.02,
-															"Inputs":	[{
-																	"$NodeId":	"SimplexNoise2DDensityNode-5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9ab2",
-																	"Type":	"SimplexNoise2D",
-																	"Skip":	false,
-																	"Lacunarity":	3,
-																	"Persistence":	0.125,
-																	"Octaves":	1,
-																	"Scale":	22,
-																	"Seed":	"A"
-																}]
-														}, {
-															"$NodeId":	"NormalizerDensityNode-6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0bc3",
-															"Type":	"Normalizer",
-															"Skip":	false,
-															"FromMin":	-1,
-															"FromMax":	1,
-															"ToMin":	-1,
-															"ToMax":	0.98,
-															"Inputs":	[{
-																	"$NodeId":	"FastGradientWarp.Density-7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1cd4",
-																	"Type":	"FastGradientWarp",
-																	"Skip":	false,
-																	"WarpScale":	200,
-																	"WarpPersistence":	0.5,
-																	"WarpLacunarity":	2,
-																	"WarpOctaves":	1,
-																	"WarpFactor":	100,
-																	"Seed":	"U",
-																	"Inputs":	[{
-																			"$NodeId":	"InverterDensityNode-8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2de5",
-																			"Type":	"Inverter",
-																			"Skip":	false,
-																			"Inputs":	[{
-																					"$NodeId":	"ImportedDensityNode-9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3ef6",
-																					"Type":	"Imported",
-																					"Skip":	false,
-																					"Name":	"World-River-Map"
-																				}]
-																		}]
-																}]
-														}, {
-															"$NodeId":	"CurveMapper.Density-0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f07",
-															"Type":	"CurveMapper",
-															"Skip":	false,
-															"Curve":	{
-																"$NodeId":	"ManualCurve-1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a18",
-																"Type":	"Manual",
-																"Points":	[{
-																		"$NodeId":	"CurvePoint-2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b29",
-																		"In":	-5,
-																		"Out":	0.95
-																	}, {
-																		"$NodeId":	"CurvePoint-3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c3a",
-																		"In":	1,
-																		"Out":	0.88
-																	}, {
-																		"$NodeId":	"CurvePoint-4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d4b",
-																		"In":	40,
-																		"Out":	-1
-																	}]
-															},
-															"Inputs":	[{
-																	"$NodeId":	"BaseHeight.Density-5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e5c",
-																	"Type":	"BaseHeight",
-																	"Skip":	false,
-																	"BaseHeightName":	"Water",
-																	"Distance":	true
-																}]
-														}]
-												}, {
-													"$NodeId":	"NormalizerDensityNode-6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f6d",
-													"Type":	"Normalizer",
-													"Skip":	false,
-													"FromMin":	-0.5,
-													"FromMax":	0.5,
-													"ToMin":	0,
-													"ToMax":	1,
-													"Inputs":	[{
-															"$NodeId":	"SimplexNoise2DDensityNode-7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a7e",
-															"Type":	"SimplexNoise2D",
-															"Skip":	false,
-															"Lacunarity":	2,
-															"Persistence":	0.5,
-															"Octaves":	1,
-															"Scale":	250,
-															"Seed":	"A"
-														}]
-												}]
-										}, {
-											"$NodeId":	"SumDensityNode-8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b8f",
-											"Type":	"Sum",
-											"Skip":	false,
-											"Inputs":	[{
-													"$NodeId":	"NormalizerDensityNode-9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c9a",
-													"Type":	"Normalizer",
-													"Skip":	false,
-													"FromMin":	-1,
-													"FromMax":	1,
-													"ToMin":	0,
-													"ToMax":	0.02,
-													"Inputs":	[{
-															"$NodeId":	"SimplexNoise2DDensityNode-0b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d0b",
-															"Type":	"SimplexNoise2D",
-															"Skip":	false,
-															"Lacunarity":	3,
-															"Persistence":	0.125,
-															"Octaves":	1,
-															"Scale":	22,
-															"Seed":	"A"
-														}]
-												}, {
-													"$NodeId":	"NormalizerDensityNode-1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e1c",
-													"Type":	"Normalizer",
-													"Skip":	false,
-													"FromMin":	-1,
-													"FromMax":	1,
-													"ToMin":	-1,
-													"ToMax":	0.98,
-													"Inputs":	[{
-															"$NodeId":	"ImportedDensityNode-2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6f2d",
-															"Type":	"Imported",
-															"Skip":	false,
-															"Name":	"World-River-Map"
-														}]
-												}, {
-													"$NodeId":	"CurveMapper.Density-3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a3e",
-													"Type":	"CurveMapper",
-													"Skip":	false,
-													"Curve":	{
-														"$NodeId":	"ManualCurve-4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b4f",
-														"Type":	"Manual",
-														"Points":	[{
-																"$NodeId":	"CurvePoint-5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9c5a",
-																"In":	-5,
-																"Out":	-0.86
-															}, {
-																"$NodeId":	"CurvePoint-6b7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d6b",
-																"In":	40,
-																"Out":	-1
-															}]
-													},
-													"Inputs":	[{
-															"$NodeId":	"BaseHeight.Density-7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e7c",
-															"Type":	"BaseHeight",
-															"Skip":	false,
-															"BaseHeightName":	"Water",
-															"Distance":	true
-														}]
-												}]
-										}]
-								}, {
-									"$NodeId":	"SumDensityNode-8d9e0f1a-2b3c-4d5e-6f7a-8b9c0d1e2f8d",
-									"Type":	"Sum",
-									"Skip":	false,
-									"Inputs":	[{
-											"$NodeId":	"SimplexNoise2DDensityNode-9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a9e",
-											"Type":	"SimplexNoise2D",
-											"Skip":	false,
-											"Lacunarity":	7,
-											"Persistence":	0.1,
-											"Octaves":	2,
-											"Scale":	150,
-											"Seed":	"A"
-										}, {
-											"$NodeId":	"CurveMapper.Density-0f1a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b0f",
-											"Type":	"CurveMapper",
-											"Skip":	false,
-											"Curve":	{
-												"$NodeId":	"ManualCurve-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c1a",
-												"Type":	"Manual",
-												"Points":	[{
-														"$NodeId":	"CurvePoint-2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d2b",
-														"In":	-7,
-														"Out":	1
-													}, {
-														"$NodeId":	"CurvePoint-3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e3c",
-														"In":	0,
-														"Out":	-1
-													}]
-											},
-											"Inputs":	[{
-													"$NodeId":	"BaseHeight.Density-4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f4d",
-													"Type":	"BaseHeight",
-													"Skip":	false,
-													"BaseHeightName":	"Water",
-													"Distance":	true
-												}]
-										}]
-								}]
-						}, {
-							"$NodeId":	"SumDensityNode-5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a5e",
+					"Inputs":	[
+						{
+							"$NodeId":	"Sum.Density-bbbb2222-cccc-dddd-eeee-ffff22223333",
 							"Type":	"Sum",
 							"Skip":	false,
-							"Inputs":	[{
-									"$NodeId":	"NormalizerDensityNode-6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b6f",
+							"Inputs":	[
+								{
+									"$NodeId":	"CurveMapper.Density-cccc3333-dddd-eeee-ffff-000033334444",
+									"Type":	"CurveMapper",
+									"Skip":	false,
+									"Curve":	{
+										"$NodeId":	"ManualCurve-dddd4444-eeee-ffff-0000-111144445555",
+										"Type":	"Manual",
+										"Points":	[
+											{
+												"$NodeId":	"CurvePoint-eeee5555-ffff-0000-1111-222255556666",
+												"In":	-10,
+												"Out":	1
+											},
+											{
+												"$NodeId":	"CurvePoint-ffff6666-0000-1111-2222-333366667777",
+												"In":	15,
+												"Out":	-1
+											}
+										]
+									},
+									"Inputs":	[
+										{
+											"$NodeId":	"BaseHeight.Density-00007777-1111-2222-3333-444477778890",
+											"Type":	"BaseHeight",
+											"Skip":	false,
+											"BaseHeightName":	"Base",
+											"Distance":	true
+										}
+									]
+								},
+								{
+									"$NodeId":	"NormalizerDensityNode-11118888-2222-3333-4444-555588889999",
 									"Type":	"Normalizer",
 									"Skip":	false,
 									"FromMin":	-1,
 									"FromMax":	1,
 									"ToMin":	0,
-									"ToMax":	0.02,
-									"Inputs":	[{
-											"$NodeId":	"SimplexNoise2DDensityNode-7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c7a",
+									"ToMax":	1,
+									"Inputs":	[
+										{
+											"$NodeId":	"SimplexNoise2DDensityNode-22229999-3333-4444-5555-66669999aaaa",
 											"Type":	"SimplexNoise2D",
 											"Skip":	false,
-											"Lacunarity":	3,
-											"Persistence":	0.125,
-											"Octaves":	1,
-											"Scale":	22,
-											"Seed":	"A"
-										}]
-								}, {
-									"$NodeId":	"NormalizerDensityNode-8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d8b",
-									"Type":	"Normalizer",
+											"Lacunarity":	2,
+											"Persistence":	0.5,
+											"Octaves":	3,
+											"Scale":	90,
+											"Seed":	"marsh"
+										}
+									]
+								}
+							]
+						},
+						{
+							"$NodeId":	"NormalizerDensityNode-1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+							"Type":	"Normalizer",
+							"Skip":	false,
+							"FromMin":	-1,
+							"FromMax":	1,
+							"ToMin":	-0.9,
+							"ToMax":	-0.5,
+							"Inputs":	[
+								{
+									"$NodeId":	"YOverride.Density-2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
+									"Type":	"YOverride",
 									"Skip":	false,
-									"FromMin":	-1,
-									"FromMax":	1,
-									"ToMin":	-1,
-									"ToMax":	0.98,
-									"Inputs":	[{
-											"$NodeId":	"InverterDensityNode-9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e9c",
-											"Type":	"Inverter",
+									"Value":	0,
+									"Inputs":	[
+										{
+											"$NodeId":	"Cache.Density-3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+											"Type":	"Cache",
 											"Skip":	false,
-											"Inputs":	[{
-													"$NodeId":	"ImportedDensityNode-0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f0d",
-													"Type":	"Imported",
+											"Capacity":	1,
+											"Inputs":	[
+												{
+													"$NodeId":	"PositionsCellNoiseDensityNode-4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
+													"Type":	"PositionsCellNoise",
 													"Skip":	false,
-													"Name":	"World-River-Map"
-												}]
-										}]
-								}, {
-									"$NodeId":	"CurveMapper.Density-1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a1e",
-									"Type":	"CurveMapper",
-									"Skip":	false,
-									"Curve":	{
-										"$NodeId":	"ManualCurve-2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b2f",
-										"Type":	"Manual",
-										"Points":	[{
-												"$NodeId":	"CurvePoint-3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c3b",
-												"In":	-6,
-												"Out":	0.98
-											}, {
-												"$NodeId":	"CurvePoint-4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d4c",
-												"In":	0,
-												"Out":	0.93
-											}, {
-												"$NodeId":	"CurvePoint-5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e5d",
-												"In":	40,
-												"Out":	-1
-											}]
-									},
-									"Inputs":	[{
-											"$NodeId":	"BaseHeight.Density-6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f6e",
-											"Type":	"BaseHeight",
-											"Skip":	false,
-											"BaseHeightName":	"Water",
-											"Distance":	true
-										}]
-								}]
-						}]
-				}, {
+													"MaxDistance":	27,
+													"Positions":	{
+														"$NodeId":	"FieldFunctionPositions-5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+														"Type":	"FieldFunction",
+														"Skip":	false,
+														"FieldFunction":	{
+															"$NodeId":	"ImportedDensityNode-6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
+															"Type":	"Imported",
+															"Skip":	false,
+															"Name":	"World-River-Map"
+														},
+														"Delimiters":	[
+															{
+																"$NodeId":	"Delimiter-7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+																"Min":	-1,
+																"Max":	0.9
+															}
+														],
+														"Positions":	{
+															"$NodeId":	"Mesh2DPositions-1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+															"Type":	"Mesh2D",
+															"Skip":	false,
+															"PointsY":	0,
+															"PointGenerator":	{
+																"$NodeId":	"MeshPointGenerator-2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6f7a",
+																"Type":	"Mesh",
+																"Jitter":	0.3,
+																"ScaleX":	36,
+																"ScaleY":	36,
+																"ScaleZ":	36,
+																"Seed":	"pools"
+															}
+														}
+													},
+													"ReturnType":	{
+														"$NodeId":	"CurvePCNReturnType-3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b",
+														"Type":	"Curve",
+														"Curve":	{
+															"$NodeId":	"ManualCurve-4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c",
+															"Type":	"Manual",
+															"Points":	[
+																{
+																	"$NodeId":	"CurvePoint-6b7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d1e",
+																	"In":	-15,
+																	"Out":	-2
+																},
+																{
+																	"$NodeId":	"CurvePoint-6b7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d20",
+																	"In":	10,
+																	"Out":	-1
+																},
+																{
+																	"$NodeId":	"CurvePoint-6b7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d21",
+																	"In":	20,
+																	"Out":	0.2
+																},
+																{
+																	"$NodeId":	"CurvePoint-6b7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d22",
+																	"In":	30,
+																	"Out":	0.75
+																},
+																{
+																	"$NodeId":	"CurvePoint-5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9c0d",
+																	"In":	42,
+																	"Out":	1
+																}
+															]
+														}
+													},
+													"DistanceFunction":	{
+														"$NodeId":	"PCNDistanceFunction-7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+														"Type":	"Euclidean"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
 					"$NodeId":	"CurveMapper.Density-7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a7f",
 					"Type":	"CurveMapper",
 					"Skip":	false,
 					"Curve":	{
 						"$NodeId":	"ManualCurve-8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b80",
 						"Type":	"Manual",
-						"Points":	[{
+						"Points":	[
+							{
 								"$NodeId":	"CurvePoint-9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c91",
 								"In":	0,
 								"Out":	1
-							}, {
+							},
+							{
 								"$NodeId":	"CurvePoint-0b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4da2",
 								"In":	0.1,
 								"Out":	-1
-							}]
+							}
+						]
 					},
-					"Inputs":	[{
+					"Inputs":	[
+						{
 							"$NodeId":	"BaseHeight.Density-1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5eb3",
 							"Type":	"BaseHeight",
 							"Skip":	false,
 							"BaseHeightName":	"Water",
 							"Distance":	true
-						}]
-				}, {
+						}
+					]
+				},
+				{
 					"$NodeId":	"CurveMapper.Density-2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6fc4",
 					"Type":	"CurveMapper",
 					"Skip":	false,
 					"Curve":	{
 						"$NodeId":	"ManualCurve-3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7ad5",
 						"Type":	"Manual",
-						"Points":	[{
+						"Points":	[
+							{
 								"$NodeId":	"CurvePoint-4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8be6",
 								"In":	-30,
 								"Out":	1
-							}, {
+							},
+							{
 								"$NodeId":	"CurvePoint-5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9cf7",
 								"In":	-20,
 								"Out":	0
-							}, {
+							},
+							{
 								"$NodeId":	"CurvePoint-6b7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d08",
 								"In":	10,
 								"Out":	0
-							}, {
+							},
+							{
 								"$NodeId":	"CurvePoint-7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e19",
 								"In":	50,
 								"Out":	1
-							}]
+							}
+						]
 					},
-					"Inputs":	[{
+					"Inputs":	[
+						{
 							"$NodeId":	"BaseHeight.Density-8d9e0f1a-2b3c-4d5e-6f7a-8b9c0d1e2f2a",
 							"Type":	"BaseHeight",
 							"Skip":	false,
 							"BaseHeightName":	"Water",
 							"Distance":	true
-						}]
-				}]
+						}
+					]
+				}
+			]
 		}
 	},
 	"MaterialProvider":	{
@@ -506,7 +258,8 @@
 		"Solid":	{
 			"$NodeId":	"QueueMaterialProvider-0f1a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b4c",
 			"Type":	"Queue",
-			"Queue":	[{
+			"Queue":	[
+				{
 					"$NodeId":	"SimpleHorizontalMaterialProvider-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c5d",
 					"Type":	"SimpleHorizontal",
 					"TopY":	1,
@@ -521,10 +274,11 @@
 							"Solid":	"Rock_Bedrock"
 						}
 					}
-				}, {
+				},
+				{
 					"$NodeId":	"SimpleHorizontalMaterialProvider-4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f80",
 					"Type":	"SimpleHorizontal",
-					"TopY":	0,
+					"TopY":	-1,
 					"TopBaseHeight":	"Water",
 					"BottomY":	-20,
 					"BottomBaseHeight":	"Water",
@@ -533,7 +287,8 @@
 						"Type":	"SpaceAndDepth",
 						"LayerContext":	"DEPTH_INTO_FLOOR",
 						"MaxExpectedDepth":	2,
-						"Layers":	[{
+						"Layers":	[
+							{
 								"$NodeId":	"ConstantThicknessLayerSADMP-6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0ba2",
 								"Type":	"ConstantThickness",
 								"Thickness":	2,
@@ -545,9 +300,11 @@
 										"Solid":	"Soil_Mud"
 									}
 								}
-							}]
+							}
+						]
 					}
-				}, {
+				},
+				{
 					"$NodeId":	"SimpleHorizontalMaterialProvider-9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3ed5",
 					"Type":	"SimpleHorizontal",
 					"TopY":	5,
@@ -559,7 +316,8 @@
 						"Type":	"SpaceAndDepth",
 						"LayerContext":	"DEPTH_INTO_FLOOR",
 						"MaxExpectedDepth":	1,
-						"Layers":	[{
+						"Layers":	[
+							{
 								"$NodeId":	"ConstantThicknessLayerSADMP-layer3-aaaa-bbbb-cccc-dddd5555",
 								"Type":	"ConstantThickness",
 								"Thickness":	1,
@@ -576,7 +334,8 @@
 										"Scale":	30,
 										"Seed":	"mud"
 									},
-									"Delimiters":	[{
+									"Delimiters":	[
+										{
 											"$NodeId":	"Delimiter-cccc3333-cccc-dddd-eeee-ffff22223333",
 											"From":	-1,
 											"To":	-0.6,
@@ -588,7 +347,8 @@
 													"Solid":	"Soil_Mud"
 												}
 											}
-										}, {
+										},
+										{
 											"$NodeId":	"Delimiter-8888ffff-9999-aaaa-bbbb-ccccffff0000",
 											"From":	-0.6,
 											"To":	0.7,
@@ -600,7 +360,8 @@
 													"Solid":	"Soil_Grass_Wet"
 												}
 											}
-										}, {
+										},
+										{
 											"$NodeId":	"Delimiter-bbbb2222-cccc-dddd-eeee-ffff22223333",
 											"From":	0.7,
 											"To":	1,
@@ -612,11 +373,14 @@
 													"Solid":	"Soil_Mud"
 												}
 											}
-										}]
+										}
+									]
 								}
-							}]
+							}
+						]
 					}
-				}, {
+				},
+				{
 					"$NodeId":	"SimpleHorizontalMaterialProvider-4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d2a",
 					"Type":	"SimpleHorizontal",
 					"TopY":	20,
@@ -628,7 +392,8 @@
 						"Type":	"SpaceAndDepth",
 						"LayerContext":	"DEPTH_INTO_FLOOR",
 						"MaxExpectedDepth":	3,
-						"Layers":	[{
+						"Layers":	[
+							{
 								"$NodeId":	"ConstantThicknessLayerSADMP-6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f4c",
 								"Type":	"ConstantThickness",
 								"Thickness":	1,
@@ -640,7 +405,8 @@
 										"Solid":	"Soil_Grass_Wet"
 									}
 								}
-							}, {
+							},
+							{
 								"$NodeId":	"ConstantThicknessLayerSADMP-9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c7f",
 								"Type":	"ConstantThickness",
 								"Thickness":	2,
@@ -652,9 +418,11 @@
 										"Solid":	"Soil_Dirt_Wet"
 									}
 								}
-							}]
+							}
+						]
 					}
-				}, {
+				},
+				{
 					"$NodeId":	"SimpleHorizontalMaterialProvider-2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6fa2",
 					"Type":	"SimpleHorizontal",
 					"TopY":	30,
@@ -666,7 +434,8 @@
 						"Type":	"SpaceAndDepth",
 						"LayerContext":	"DEPTH_INTO_FLOOR",
 						"MaxExpectedDepth":	3,
-						"Layers":	[{
+						"Layers":	[
+							{
 								"$NodeId":	"ConstantThicknessLayerSADMP-4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8bc4",
 								"Type":	"ConstantThickness",
 								"Thickness":	1,
@@ -678,7 +447,8 @@
 										"Solid":	"Soil_Grass_Wet"
 									}
 								}
-							}, {
+							},
+							{
 								"$NodeId":	"ConstantThicknessLayerSADMP-7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1ef7",
 								"Type":	"ConstantThickness",
 								"Thickness":	2,
@@ -690,21 +460,25 @@
 										"Solid":	"Soil_Dirt_Wet"
 									}
 								}
-							}]
+							}
+						]
 					}
-				}, {
+				},
+				{
 					"$NodeId":	"ConstantMaterialProvider-0f1a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b2a",
 					"Type":	"Constant",
 					"Material":	{
 						"$NodeId":	"Material-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c3b",
 						"Solid":	"Rock_Stone"
 					}
-				}]
+				}
+			]
 		},
 		"Empty":	{
 			"$NodeId":	"QueueMaterialProvider-2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d4c",
 			"Type":	"Queue",
-			"Queue":	[{
+			"Queue":	[
+				{
 					"$NodeId":	"SimpleHorizontalMaterialProvider-3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e5d",
 					"Type":	"SimpleHorizontal",
 					"TopY":	0,
@@ -719,17 +493,20 @@
 							"Fluid":	"Water_Source"
 						}
 					}
-				}, {
+				},
+				{
 					"$NodeId":	"ConstantMaterialProvider-6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b80",
 					"Type":	"Constant",
 					"Material":	{
 						"$NodeId":	"Material-7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c91",
 						"Solid":	"Empty"
 					}
-				}]
+				}
+			]
 		}
 	},
-	"Props":	[		{
+	"Props":	[
+		{
 			"$NodeId":	"Runtime-blue1-5555-6666-7777-8888bbbbcccc",
 			"Skip":	false,
 			"Runtime":	0,
@@ -760,27 +537,30 @@
 					"DistanceCurve":	{
 						"$NodeId":	"DistanceSCurve-blue6-aaaa-bbbb-cccc-dddd00001111",
 						"Type":	"DistanceS",
-						"ExponentA": 32,
-						"ExponentB": 5,
-						"Transition": 0.5,
-						"TransitionSmooth": 0.75,
-						"Range": 64
+						"ExponentA":	32,
+						"ExponentB":	5,
+						"Transition":	0.5,
+						"TransitionSmooth":	0.75,
+						"Range":	64
 					},
-					"WeightedProps":	[{
+					"WeightedProps":	[
+						{
 							"$NodeId":	"Weighted.Cluster.Prop-blue9-dddd-eeee-ffff-000033334444",
 							"Weight":	1,
 							"ColumnProp":	{
 								"$NodeId":	"Column.Prop-bluea-eeee-ffff-0000-111144445555",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-blueb-ffff-0000-1111-222255556666",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-bluec-0000-1111-2222-333366667777",
 											"Solid":	"Plant_Crop_Mushroom_Glowing_Blue"
 										}
-									}],
+									}
+								],
 								"Directionality":	{
 									"$NodeId":	"Static.Directionality-blued-1111-2222-3333-444477778888",
 									"Type":	"Static",
@@ -796,10 +576,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-blueg-4444-5555-6666-7777aaaabbbb",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-blueh-5555-6666-7777-8888bbbbcccc",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -809,13 +591,16 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-bluej-7777-8888-9999-aaaaddddeeee",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-bluek-8888-9999-aaaa-bbbbeeeeffff",
 														"Solid":	"Soil_Grass_Wet"
-												}, {
+													},
+													{
 														"$NodeId":	"Material-bluel-9999-aaaa-bbbb-ccccffff0000",
 														"Solid":	"Wood_Ash_Trunk_Full"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -832,7 +617,8 @@
 									"ResultCap":	1
 								}
 							}
-						}],
+						}
+					],
 					"Pattern":	{
 						"$NodeId":	"Floor.Pattern-bluen-bbbb-cccc-dddd-eeee11112222",
 						"Type":	"Floor",
@@ -844,10 +630,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-bluep-dddd-eeee-ffff-000033334444",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-blueq-eeee-ffff-0000-111144445555",
 										"Solid":	"Empty"
-									}]
+									}
+								]
 							}
 						},
 						"Floor":	{
@@ -857,10 +645,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-blues-0000-1111-2222-333366667777",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-bluet-1111-2222-3333-444477778888",
 										"Solid":	"Soil_Grass_Wet"
-									}]
+									}
+								]
 							}
 						}
 					},
@@ -877,7 +667,8 @@
 					}
 				}
 			}
-		}, {
+		},
+		{
 			"$NodeId":	"Runtime-orange1-4444-5555-6666-7777eeeeffff",
 			"Skip":	false,
 			"Runtime":	0,
@@ -908,27 +699,30 @@
 					"DistanceCurve":	{
 						"$NodeId":	"DistanceSCurve-orange6-aaaa-bbbb-cccc-dddd11112222",
 						"Type":	"DistanceS",
-						"ExponentA": 18,
-						"ExponentB": 4,
-						"Transition": 0.25,
-						"TransitionSmooth": 0.5,
-						"Range": 24
+						"ExponentA":	18,
+						"ExponentB":	4,
+						"Transition":	0.25,
+						"TransitionSmooth":	0.5,
+						"Range":	24
 					},
-					"WeightedProps":	[{
+					"WeightedProps":	[
+						{
 							"$NodeId":	"Weighted.Cluster.Prop-orange9-dddd-eeee-ffff-000044445555",
 							"Weight":	1,
 							"ColumnProp":	{
 								"$NodeId":	"Column.Prop-orangea-eeee-ffff-0000-111155556666",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-orangeb-ffff-0000-1111-222266667777",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-orangec-0000-1111-2222-333377778888",
 											"Solid":	"Plant_Crop_Mushroom_Glowing_Orange"
 										}
-									}],
+									}
+								],
 								"Directionality":	{
 									"$NodeId":	"Static.Directionality-oranged-1111-2222-3333-444488889999",
 									"Type":	"Static",
@@ -944,10 +738,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-orangeg-4444-5555-6666-7777bbbbcccc",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-orangeh-5555-6666-7777-8888ccccdddd",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -957,13 +753,16 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-orangej-7777-8888-9999-aaaaeeeeffff",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-orangek-8888-9999-aaaa-bbbbffff0000",
 														"Solid":	"Soil_Grass_Wet"
-													}, {
+													},
+													{
 														"$NodeId":	"Material-orangel-9999-aaaa-bbbb-cccc66661144",
 														"Solid":	"Wood_Ash_Trunk_Full"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -980,7 +779,8 @@
 									"ResultCap":	1
 								}
 							}
-						}],
+						}
+					],
 					"Pattern":	{
 						"$NodeId":	"Floor.Pattern-orangen-bbbb-cccc-dddd-eeee22223333",
 						"Type":	"Floor",
@@ -992,10 +792,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-orangep-dddd-eeee-ffff-000044445555",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-orangeq-eeee-ffff-0000-111155556666",
 										"Solid":	"Empty"
-									}]
+									}
+								]
 							}
 						},
 						"Floor":	{
@@ -1005,10 +807,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-oranges-0000-1111-2222-333377778888",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-oranget-1111-2222-3333-444488889999",
 										"Solid":	"Soil_Grass_Wet"
-									}]
+									}
+								]
 							}
 						}
 					},
@@ -1025,7 +829,8 @@
 					}
 				}
 			}
-		}, {
+		},
+		{
 			"$NodeId":	"Runtime-bushyblue1-aaaa-bbbb-cccc-dddd11112222",
 			"Skip":	false,
 			"Runtime":	0,
@@ -1056,36 +861,43 @@
 					"DistanceCurve":	{
 						"$NodeId":	"ManualCurve-bushyblue6-aaaa-bbbb-cccc-dddd00001111",
 						"Type":	"Manual",
-						"Points":	[{
+						"Points":	[
+							{
 								"$NodeId":	"CurvePoint-bushyblue7-bbbb-cccc-dddd-eeee11112222",
 								"In":	0,
 								"Out":	0.6
-							}]
+							}
+						]
 					},
-					"WeightedProps":	[{
+					"WeightedProps":	[
+						{
 							"$NodeId":	"Weighted.Cluster.Prop-bushyblue8-cccc-dddd-eeee-ffff22223333",
 							"Weight":	1,
 							"ColumnProp":	{
 								"$NodeId":	"Column.Prop-bushyblue9-dddd-eeee-ffff-000033334444",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-bushybluea-eeee-ffff-0000-111144445555",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-bushyblueb-ffff-0000-1111-222255556666",
 											"Solid":	"Plant_Flower_Bushy_Blue"
 										}
-									}],
+									}
+								],
 								"BlockMask":	{
 									"$NodeId":	"BlockMask-bushybluebm-aaaa-bbbb-cccc-dddd66667777",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-bushybluedr-bbbb-cccc-dddd-eeee77778888",
 										"Inclusive":	true,
-										"Materials":	[{
+										"Materials":	[
+											{
 												"$NodeId":	"Material-bushybluedr1-cccc-dddd-eeee-ffff88889999",
 												"Fluid":	"Water_Source"
-											}]
+											}
+										]
 									}
 								},
 								"Directionality":	{
@@ -1103,10 +915,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-bushybluef-4444-5555-6666-7777cccc0000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-bushyblueg-5555-6666-7777-8888dddd0000",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -1116,10 +930,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-bushybluei-7777-8888-9999-aaaaffff0000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-bushybluej-8888-9999-aaaa-bbbb00001111",
 														"Solid":	"Soil_Grass_Wet"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -1136,7 +952,8 @@
 									"ResultCap":	1
 								}
 							}
-						}],
+						}
+					],
 					"Pattern":	{
 						"$NodeId":	"Floor.Pattern-bushybluep-bbbb-cccc-dddd-eeee33334444",
 						"Type":	"Floor",
@@ -1148,10 +965,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-bushybluer-dddd-eeee-ffff-000055556666",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-bushyblues-eeee-ffff-0000-111166667777",
 										"Solid":	"Empty"
-									}]
+									}
+								]
 							}
 						},
 						"Floor":	{
@@ -1161,10 +980,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-bushyblueu-0000-1111-2222-333388889999",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-bushybluev-1111-2222-3333-444499990000",
 										"Solid":	"Soil_Grass_Wet"
-									}]
+									}
+								]
 							}
 						}
 					},
@@ -1181,7 +1002,8 @@
 					}
 				}
 			}
-		}, {
+		},
+		{
 			"$NodeId":	"Runtime-grass1-aaaa-bbbb-cccc-dddd11112222",
 			"Skip":	false,
 			"Runtime":	0,
@@ -1212,36 +1034,41 @@
 					"DistanceCurve":	{
 						"$NodeId":	"DistanceSCurve-grass6-aaaa-bbbb-cccc-dddd00001111",
 						"Type":	"DistanceS",
-						"ExponentA": 0.25,
+						"ExponentA":	0.25,
 						"ExponentB":	4,
 						"Transition":	0.5,
 						"TransitionSmooth":	0.1,
 						"Range":	7
 					},
-					"WeightedProps":	[{
+					"WeightedProps":	[
+						{
 							"$NodeId":	"Weighted.Cluster.Prop-grass9-dddd-eeee-ffff-000033334444",
 							"Weight":	40,
 							"ColumnProp":	{
 								"$NodeId":	"Column.Prop-grassa-eeee-ffff-0000-111144445555",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-grass6-ffff-0000-1111-222266667777",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-grass7-0000-1111-2222-333377778888",
 											"Solid":	"Plant_Grass_Lush"
 										}
-									}],
+									}
+								],
 								"BlockMask":	{
 									"$NodeId":	"BlockMask-grassbm-aaaa-bbbb-cccc-dddd11112222",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-grassdr-bbbb-cccc-dddd-eeee22223333",
 										"Inclusive":	true,
-										"Materials":	[{
+										"Materials":	[
+											{
 												"$NodeId":	"Material-grassdr1-cccc-dddd-eeee-ffff33334444",
 												"Fluid":	"Water_Source"
-											}]
+											}
+										]
 									}
 								},
 								"Directionality":	{
@@ -1259,10 +1086,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-grassc-4444-5555-6666-7777aaaabbbb",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-grassd-5555-6666-7777-8888bbbbcccc",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -1272,10 +1101,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-grassf-7777-8888-9999-aaaaddddeeee",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-grassg-8888-9999-aaaa-bbbbeeeeffff",
 														"Solid":	"Soil_Grass_Wet"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -1292,30 +1123,35 @@
 									"ResultCap":	1
 								}
 							}
-						}, {
+						},
+						{
 							"$NodeId":	"Weighted.Cluster.Prop-grasstall-dddd-eeee-ffff-000044445555",
 							"Weight":	60,
 							"ColumnProp":	{
 								"$NodeId":	"Column.Prop-grasstalla-eeee-ffff-0000-111155556666",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-grasstallb-ffff-0000-1111-222277778888",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-grasstallc-0000-1111-2222-333388889999",
 											"Solid":	"Plant_Grass_Lush_Tall"
 										}
-									}],
+									}
+								],
 								"BlockMask":	{
 									"$NodeId":	"BlockMask-grasstallbm-aaaa-bbbb-cccc-dddd22223333",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-grasstalldr-bbbb-cccc-dddd-eeee33334444",
 										"Inclusive":	true,
-										"Materials":	[{
+										"Materials":	[
+											{
 												"$NodeId":	"Material-grasstalldr1-cccc-dddd-eeee-ffff44445555",
 												"Fluid":	"Water_Source"
-											}]
+											}
+										]
 									}
 								},
 								"Directionality":	{
@@ -1333,10 +1169,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-grasstallg-4444-5555-6666-7777bbbb0000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-grasstallh-5555-6666-7777-8888cccc0000",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -1346,10 +1184,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-grasstallj-7777-8888-9999-aaaaeeeee000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-grasstallk-8888-9999-aaaa-bbbbffff0000",
 														"Solid":	"Soil_Grass_Wet"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -1366,7 +1206,8 @@
 									"ResultCap":	1
 								}
 							}
-						}],
+						}
+					],
 					"Pattern":	{
 						"$NodeId":	"Floor.Pattern-grassi-bbbb-cccc-dddd-eeee11112222",
 						"Type":	"Floor",
@@ -1378,10 +1219,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-grassk-dddd-eeee-ffff-000033334444",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-glassl-eeee-ffff-0000-111144445555",
 										"Solid":	"Empty"
-									}]
+									}
+								]
 							}
 						},
 						"Floor":	{
@@ -1391,10 +1234,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-grassn-0000-1111-2222-333366667777",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-grasso-1111-2222-3333-444477778888",
 										"Solid":	"Soil_Grass_Wet"
-									}]
+									}
+								]
 							}
 						}
 					},
@@ -1411,7 +1256,8 @@
 					}
 				}
 			}
-		}, {
+		},
+		{
 			"$NodeId":	"Runtime-shortgrass1-aaaa-bbbb-cccc-dddd33334444",
 			"Skip":	false,
 			"Runtime":	0,
@@ -1435,7 +1281,8 @@
 				"Type":	"Weighted",
 				"SkipChance":	0,
 				"Seed":	"shortgrasspick",
-				"WeightedAssignments":	[{
+				"WeightedAssignments":	[
+					{
 						"$NodeId":	"WeightedEntry-shortgrass-aaaa-bbbb-cccc-dddd77778888",
 						"Weight":	88,
 						"Assignments":	{
@@ -1445,23 +1292,27 @@
 								"$NodeId":	"Column.Prop-shortgrass5-eeee-ffff-0000-111177778888",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-shortgrass6-ffff-0000-1111-222288889999",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-shortgrass7-0000-1111-2222-33339999aaaa",
 											"Solid":	"Plant_Grass_Lush_Short"
 										}
-									}],
+									}
+								],
 								"BlockMask":	{
 									"$NodeId":	"BlockMask-shortgrassbm-aaaa-bbbb-cccc-dddd44445555",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-shortgrassdr-bbbb-cccc-dddd-eeee55556666",
 										"Inclusive":	true,
-										"Materials":	[{
+										"Materials":	[
+											{
 												"$NodeId":	"Material-shortgrassdr1-cccc-dddd-eeee-ffff66667777",
 												"Fluid":	"Water_Source"
-											}]
+											}
+										]
 									}
 								},
 								"Directionality":	{
@@ -1479,10 +1330,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-shortgrassb-4444-5555-6666-7777ddddeeee",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-shortgrassc-5555-6666-7777-8888eeeeffff",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -1492,10 +1345,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-shortgrasse-7777-8888-9999-aaaa00001111",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-shortgrassf-8888-9999-aaaa-bbbb11112222",
 														"Solid":	"Soil_Grass_Wet"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -1513,7 +1368,8 @@
 								}
 							}
 						}
-					}, {
+					},
+					{
 						"$NodeId":	"WeightedEntry-lushground-aaaa-bbbb-cccc-dddd88889999",
 						"Weight":	9,
 						"Assignments":	{
@@ -1523,23 +1379,27 @@
 								"$NodeId":	"Column.Prop-lushground5-eeee-ffff-0000-111188889999",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-lushground6-ffff-0000-1111-222299990000",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-lushground7-0000-1111-2222-3333aaaa0000",
 											"Solid":	"Plant_Grass_Lush"
 										}
-									}],
+									}
+								],
 								"BlockMask":	{
 									"$NodeId":	"BlockMask-lushgroundbm-aaaa-bbbb-cccc-dddd55556666",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-lushgrounddr-bbbb-cccc-dddd-eeee66667777",
 										"Inclusive":	true,
-										"Materials":	[{
+										"Materials":	[
+											{
 												"$NodeId":	"Material-lushgrounddr1-cccc-dddd-eeee-ffff77778888",
 												"Fluid":	"Water_Source"
-											}]
+											}
+										]
 									}
 								},
 								"Directionality":	{
@@ -1557,10 +1417,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-lushgroundb-4444-5555-6666-7777eeeeffff",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-lushgroundc-5555-6666-7777-8888ffff0000",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -1570,10 +1432,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-lushgrounde-7777-8888-9999-aaaa11112222",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-lushgroundf-8888-9999-aaaa-bbbb22223333",
 														"Solid":	"Soil_Grass_Wet"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -1591,7 +1455,8 @@
 								}
 							}
 						}
-					}, {
+					},
+					{
 						"$NodeId":	"WeightedEntry-gnarledtall-aaaa-bbbb-cccc-dddd99990000",
 						"Weight":	3,
 						"Assignments":	{
@@ -1601,23 +1466,27 @@
 								"$NodeId":	"Column.Prop-gnarledtall5-eeee-ffff-0000-111199990000",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-gnarledtall6-ffff-0000-1111-222299990000",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-gnarledtall7-0000-1111-2222-333399990000",
 											"Solid":	"Plant_Grass_Gnarled_Tall"
 										}
-									}],
+									}
+								],
 								"BlockMask":	{
 									"$NodeId":	"BlockMask-gnarledtallbm-aaaa-bbbb-cccc-dddd99990000",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-gnarledtalldr-bbbb-cccc-dddd-eeee99990000",
 										"Inclusive":	true,
-										"Materials":	[{
+										"Materials":	[
+											{
 												"$NodeId":	"Material-gnarledtalldr1-cccc-dddd-eeee-ffff99990000",
 												"Fluid":	"Water_Source"
-											}]
+											}
+										]
 									}
 								},
 								"Directionality":	{
@@ -1635,10 +1504,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-gnarledtallb-4444-5555-6666-777799990000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-gnarledtallc-5555-6666-7777-888899990000",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -1648,10 +1519,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-gnarledtalle-7777-8888-9999-aaaa99990000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-gnarledtallf-8888-9999-aaaa-bbbb99990000",
 														"Solid":	"Soil_Grass_Wet"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -1669,9 +1542,11 @@
 								}
 							}
 						}
-					}]
+					}
+				]
 			}
-		}, {
+		},
+		{
 			"$NodeId":	"Runtime-cyanflower1-aaaa-bbbb-cccc-dddd11112222",
 			"Skip":	false,
 			"Runtime":	0,
@@ -1702,36 +1577,43 @@
 					"DistanceCurve":	{
 						"$NodeId":	"ManualCurve-cyanflower6-aaaa-bbbb-cccc-dddd00001111",
 						"Type":	"Manual",
-						"Points":	[{
+						"Points":	[
+							{
 								"$NodeId":	"CurvePoint-cyanflower7-bbbb-cccc-dddd-eeee11112222",
 								"In":	0.01,
 								"Out":	0.0425
-							}]
+							}
+						]
 					},
-					"WeightedProps":	[{
+					"WeightedProps":	[
+						{
 							"$NodeId":	"Weighted.Cluster.Prop-cyanflower8-cccc-dddd-eeee-ffff22223333",
 							"Weight":	1,
 							"ColumnProp":	{
 								"$NodeId":	"Column.Prop-cyanflower9-dddd-eeee-ffff-000033334444",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-cyanflowera-eeee-ffff-0000-111144445555",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-cyanflowerb-ffff-0000-1111-222255556666",
 											"Solid":	"Plant_Flower_Tall_Cyan"
 										}
-									}],
+									}
+								],
 								"BlockMask":	{
 									"$NodeId":	"BlockMask-cyanflowerbm-aaaa-bbbb-cccc-dddd66667777",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-cyanflowerdr-bbbb-cccc-dddd-eeee77778888",
 										"Inclusive":	true,
-										"Materials":	[{
+										"Materials":	[
+											{
 												"$NodeId":	"Material-cyanflowerdr1-cccc-dddd-eeee-ffff88889999",
 												"Fluid":	"Water_Source"
-											}]
+											}
+										]
 									}
 								},
 								"Directionality":	{
@@ -1749,10 +1631,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-cyanflowerf-4444-5555-6666-7777cccc0000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-cyanflowerg-5555-6666-7777-8888dddd0000",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -1762,10 +1646,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-cyanfloweri-7777-8888-9999-aaaaffff0000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-cyanflowerj-8888-9999-aaaa-bbbb00001111",
 														"Solid":	"Soil_Grass_Wet"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -1782,7 +1668,8 @@
 									"ResultCap":	1
 								}
 							}
-						}],
+						}
+					],
 					"Pattern":	{
 						"$NodeId":	"Floor.Pattern-cyanflowerp-bbbb-cccc-dddd-eeee33334444",
 						"Type":	"Floor",
@@ -1794,10 +1681,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-cyanflowerr-dddd-eeee-ffff-000055556666",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-cyanflowers-eeee-ffff-0000-111166667777",
 										"Solid":	"Empty"
-									}]
+									}
+								]
 							}
 						},
 						"Floor":	{
@@ -1807,10 +1696,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-cyanfloweru-0000-1111-2222-333388889999",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-cyanflowerv-1111-2222-3333-444499990000",
 										"Solid":	"Soil_Grass_Wet"
-									}]
+									}
+								]
 							}
 						}
 					},
@@ -1827,7 +1718,8 @@
 					}
 				}
 			}
-		}, {
+		},
+		{
 			"$NodeId":	"Runtime-mudreed1-aaaa-bbbb-cccc-dddd11112222",
 			"Skip":	false,
 			"Runtime":	0,
@@ -1858,36 +1750,43 @@
 					"DistanceCurve":	{
 						"$NodeId":	"ManualCurve-mudreed6-aaaa-bbbb-cccc-dddd00001111",
 						"Type":	"Manual",
-						"Points":	[{
+						"Points":	[
+							{
 								"$NodeId":	"CurvePoint-mudreed7-bbbb-cccc-dddd-eeee11112222",
 								"In":	0,
 								"Out":	0.625
-							}]
+							}
+						]
 					},
-					"WeightedProps":	[{
+					"WeightedProps":	[
+						{
 							"$NodeId":	"Weighted.Cluster.Prop-mudreed8-cccc-dddd-eeee-ffff22223333",
 							"Weight":	1,
 							"ColumnProp":	{
 								"$NodeId":	"Column.Prop-mudreed9-dddd-eeee-ffff-000033334444",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-mudreeda-eeee-ffff-0000-111144445555",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-mudreed-water-ffff-0000-1111-222255556666",
 											"Solid":	"Plant_Reeds_Water"
 										}
-									}],
+									}
+								],
 								"BlockMask":	{
 									"$NodeId":	"BlockMask-mudreed-waterbm-aaaa-bbbb-cccc-dddd66667777",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-mudreed-waterdr-bbbb-cccc-dddd-eeee77778888",
 										"Inclusive":	true,
-										"Materials":	[{
+										"Materials":	[
+											{
 												"$NodeId":	"Material-mudreed-waterdr1-cccc-dddd-eeee-ffff88889999",
 												"Fluid":	"Water_Source"
-											}]
+											}
+										]
 									}
 								},
 								"Directionality":	{
@@ -1905,10 +1804,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-mudreed-waterf-4444-5555-6666-7777cccc0000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-mudreed-waterg-5555-6666-7777-8888dddd0000",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -1918,10 +1819,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-mudreed-wateri-7777-8888-9999-aaaaffff0000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-mudreed-waterj-8888-9999-aaaa-bbbb00001111",
 														"Solid":	"Soil_Mud"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -1938,30 +1841,35 @@
 									"ResultCap":	1
 								}
 							}
-						}, {
+						},
+						{
 							"$NodeId":	"Weighted.Cluster.Prop-mudreed-wet-cccc-dddd-eeee-ffff33334444",
 							"Weight":	1,
 							"ColumnProp":	{
 								"$NodeId":	"Column.Prop-mudreed-wet9-dddd-eeee-ffff-000044445555",
 								"Type":	"Column",
 								"Skip":	false,
-								"ColumnBlocks":	[{
+								"ColumnBlocks":	[
+									{
 										"$NodeId":	"Block.Column.Prop-mudreed-weta-eeee-ffff-0000-111155556666",
 										"Y":	0,
 										"Material":	{
 											"$NodeId":	"Material-mudreed-wetb-ffff-0000-1111-222266667777",
 											"Solid":	"Plant_Reeds_Wet"
 										}
-									}],
+									}
+								],
 								"BlockMask":	{
 									"$NodeId":	"BlockMask-mudreed-wetbm-aaaa-bbbb-cccc-dddd77778888",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-mudreed-wetdr-bbbb-cccc-dddd-eeee88889999",
 										"Inclusive":	true,
-										"Materials":	[{
+										"Materials":	[
+											{
 												"$NodeId":	"Material-mudreed-wetdr1-cccc-dddd-eeee-ffff9999aaaa",
 												"Fluid":	"Water_Source"
-											}]
+											}
+										]
 									}
 								},
 								"Directionality":	{
@@ -1979,10 +1887,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-mudreed-wetf-4444-5555-6666-7777dddd0000",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-mudreed-wetg-5555-6666-7777-8888eeee0000",
 														"Solid":	"Empty"
-													}]
+													}
+												]
 											}
 										},
 										"Floor":	{
@@ -1992,10 +1902,12 @@
 											"BlockSet":	{
 												"$NodeId":	"BlockSet.BlockMask-mudreed-weti-7777-8888-9999-aaaa00001111",
 												"Inclusive":	true,
-												"Materials":	[{
+												"Materials":	[
+													{
 														"$NodeId":	"Material-mudreed-wetj-8888-9999-aaaa-bbbb11112222",
 														"Solid":	"Soil_Mud"
-													}]
+													}
+												]
 											}
 										}
 									}
@@ -2012,7 +1924,8 @@
 									"ResultCap":	1
 								}
 							}
-						}],
+						}
+					],
 					"Pattern":	{
 						"$NodeId":	"Floor.Pattern-mudreedp-bbbb-cccc-dddd-eeee33334444",
 						"Type":	"Floor",
@@ -2024,10 +1937,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-mudreedr-dddd-eeee-ffff-000055556666",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-mudreeds-eeee-ffff-0000-111166667777",
 										"Solid":	"Empty"
-									}]
+									}
+								]
 							}
 						},
 						"Floor":	{
@@ -2037,10 +1952,12 @@
 							"BlockSet":	{
 								"$NodeId":	"BlockSet.BlockMask-mudreedu-0000-1111-2222-333388889999",
 								"Inclusive":	true,
-								"Materials":	[{
+								"Materials":	[
+									{
 										"$NodeId":	"Material-mudreedv-1111-2222-3333-444499990000",
 										"Solid":	"Soil_Mud"
-									}]
+									}
+								]
 							}
 						}
 					},
@@ -2057,7 +1974,8 @@
 					}
 				}
 			}
-		}],
+		}
+	],
 	"EnvironmentProvider":	{
 		"$NodeId":	"DensityDelimited.EnvironmentProvider-341e682a-ce47-473d-ac4f-1f587a49ab61",
 		"Type":	"DensityDelimited",
@@ -2065,9 +1983,10 @@
 			"$NodeId":	"Constant.Density-5ca5255a-3dc2-4120-b4eb-2e1ae5e03743",
 			"Type":	"Constant",
 			"Skip":	false,
-			"Value": 1
+			"Value":	1
 		},
-		"Delimiters":	[{
+		"Delimiters":	[
+			{
 				"$NodeId":	"Delimiter.DensityDelimited.EnvironmentProvider-e0e69237-1b6d-4c6e-9682-993f96e4f2f1",
 				"Environment":	{
 					"$NodeId":	"Constant.EnvironmentProvider-0368bc49-21e5-4143-9888-6e64228f652c",
@@ -2079,7 +1998,8 @@
 					"MinInclusive":	1,
 					"MaxExclusive":	2
 				}
-			}]
+			}
+		]
 	},
 	"TintProvider":	{
 		"$NodeId":	"DensityDelimited.TintProvider-tint1111-2222-3333-4444-555566667777",
@@ -2088,9 +2008,10 @@
 			"$NodeId":	"ImportedDensityNode-tint2222-3333-4444-5555-66667777888",
 			"Type":	"Imported",
 			"Skip":	false,
-			"Name": "TerrainHeight"
+			"Name":	"TerrainHeight"
 		},
-		"Delimiters":	[{
+		"Delimiters":	[
+			{
 				"$NodeId":	"Delimiter.DensityDelimited.TintProvider-tint3333-4444-5555-6666-77778888999",
 				"Tint":	{
 					"$NodeId":	"Constant.TintProvider-tint4444-5555-6666-7777-8888999aaaa",
@@ -2102,7 +2023,8 @@
 					"MinInclusive":	0,
 					"MaxExclusive":	0.25
 				}
-			}, {
+			},
+			{
 				"$NodeId":	"Delimiter.DensityDelimited.TintProvider-tint3333-4444-5555-6666-77778888999",
 				"Tint":	{
 					"$NodeId":	"Constant.TintProvider-tint4444-5555-6666-7777-8888999aaaa",
@@ -2114,7 +2036,8 @@
 					"MinInclusive":	0.25,
 					"MaxExclusive":	0.75
 				}
-			}, {
+			},
+			{
 				"$NodeId":	"Delimiter.DensityDelimited.TintProvider-tint6666-7777-8888-9999-aaaabbbbccc",
 				"Tint":	{
 					"$NodeId":	"Constant.TintProvider-tint7777-8888-9999-aaaa-bbbbccccdddd",
@@ -2126,6 +2049,7 @@
 					"MinInclusive":	0.75,
 					"MaxExclusive":	2
 				}
-			}]
+			}
+		]
 	}
 }
