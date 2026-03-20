@@ -649,7 +649,7 @@
 									"Type":	"Constant",
 									"Material":	{
 										"$NodeId":	"Material-1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e91",
-										"Solid":	"Soil_Dirt"
+										"Solid":	"Soil_Dirt_Wet"
 									}
 								}
 							}]
@@ -687,7 +687,7 @@
 									"Type":	"Constant",
 									"Material":	{
 										"$NodeId":	"Material-9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a19",
-										"Solid":	"Soil_Dirt"
+										"Solid":	"Soil_Dirt_Wet"
 									}
 								}
 							}]

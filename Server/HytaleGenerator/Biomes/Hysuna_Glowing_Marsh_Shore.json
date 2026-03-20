@@ -304,7 +304,7 @@
 									"Type":	"Constant",
 									"Material":	{
 										"$NodeId":	"Material-e3f4a5b6-c7d8-9012-efab-123456789013",
-										"Solid":	"Soil_Dirt"
+										"Solid":	"Soil_Dirt_Wet"
 									}
 								}
 							}]
