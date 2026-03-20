@@ -175,7 +175,7 @@
 					"Type":	"SimpleHorizontal",
 					"TopY":	100,
 					"TopBaseHeight":	"Base",
-					"BottomY":	2,
+					"BottomY":	-4,
 					"BottomBaseHeight":	"Base",
 					"Material":	{
 						"$NodeId":	"SpaceAndDepthMaterialProvider-layer2-aaaa-bbbb-cccc-dddd4444",

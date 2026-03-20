@@ -233,13 +233,13 @@
 					"Type":	"SimpleHorizontal",
 					"TopY":	20,
 					"TopBaseHeight":	"Base",
-					"BottomY":	2,
+					"BottomY":	-4,
 					"BottomBaseHeight":	"Base",
 					"Material":	{
 						"$NodeId":	"SpaceAndDepthMaterialProvider-e7f8a9b0-c1d2-3456-efab-567890123457",
 						"Type":	"SpaceAndDepth",
 						"LayerContext":	"DEPTH_INTO_FLOOR",
-						"MaxExpectedDepth":	3,
+						"MaxExpectedDepth":	5,
 						"Layers":	[{
 								"$NodeId":	"ConstantThicknessLayerSADMP-layer3-aaaa-bbbb-cccc-dddd5555",
 								"Type":	"ConstantThickness",
@@ -298,7 +298,7 @@
 							}, {
 								"$NodeId":	"ConstantThicknessLayerSADMP-c1d2e3f4-a5b6-7890-cdef-901234567891",
 								"Type":	"ConstantThickness",
-								"Thickness":	2,
+								"Thickness":	4,
 								"Material":	{
 									"$NodeId":	"ConstantMaterialProvider-d2e3f4a5-b6c7-8901-defa-012345678902",
 									"Type":	"Constant",
