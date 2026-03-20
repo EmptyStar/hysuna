@@ -293,12 +293,46 @@
 								"Type":	"ConstantThickness",
 								"Thickness":	2,
 								"Material":	{
-									"$NodeId":	"ConstantMaterialProvider-7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1cb3",
-									"Type":	"Constant",
-									"Material":	{
-										"$NodeId":	"Material-8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2dc4",
-										"Solid":	"Soil_Mud"
-									}
+									"$NodeId":	"FieldFunctionMaterialProvider-seaweed1-aaaa-bbbb-cccc-dddd11110001",
+									"Type":	"FieldFunction",
+									"FieldFunction":	{
+										"$NodeId":	"SimplexNoise2DDensityNode-seaweed2-aaaa-bbbb-cccc-dddd11110002",
+										"Type":	"SimplexNoise2D",
+										"Skip":	false,
+										"Lacunarity":	1.8,
+										"Persistence":	0.75,
+										"Octaves":	2,
+										"Scale":	40,
+										"Seed":	"seaweed"
+									},
+									"Delimiters":	[
+										{
+											"$NodeId":	"Delimiter-seaweed3-aaaa-bbbb-cccc-dddd11110003",
+											"From":	-1,
+											"To":	-0.2,
+											"Material":	{
+												"$NodeId":	"ConstantMaterialProvider-seaweed4-aaaa-bbbb-cccc-dddd11110004",
+												"Type":	"Constant",
+												"Material":	{
+													"$NodeId":	"Material-seaweed5-aaaa-bbbb-cccc-dddd11110005",
+													"Solid":	"Soil_Seaweed_Block"
+												}
+											}
+										},
+										{
+											"$NodeId":	"Delimiter-seaweed6-aaaa-bbbb-cccc-dddd11110006",
+											"From":	-0.2,
+											"To":	1,
+											"Material":	{
+												"$NodeId":	"ConstantMaterialProvider-seaweed7-aaaa-bbbb-cccc-dddd11110007",
+												"Type":	"Constant",
+												"Material":	{
+													"$NodeId":	"Material-seaweed8-aaaa-bbbb-cccc-dddd11110008",
+													"Solid":	"Soil_Mud"
+												}
+											}
+										}
+									]
 								}
 							}
 						]
