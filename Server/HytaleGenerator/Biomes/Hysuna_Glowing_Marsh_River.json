@@ -309,7 +309,7 @@
 										{
 											"$NodeId":	"Delimiter-seaweed3-aaaa-bbbb-cccc-dddd11110003",
 											"From":	-1,
-											"To":	-0.2,
+											"To":	0.1,
 											"Material":	{
 												"$NodeId":	"ConstantMaterialProvider-seaweed4-aaaa-bbbb-cccc-dddd11110004",
 												"Type":	"Constant",
@@ -321,7 +321,7 @@
 										},
 										{
 											"$NodeId":	"Delimiter-seaweed6-aaaa-bbbb-cccc-dddd11110006",
-											"From":	-0.2,
+											"From":	0.1,
 											"To":	1,
 											"Material":	{
 												"$NodeId":	"ConstantMaterialProvider-seaweed7-aaaa-bbbb-cccc-dddd11110007",
