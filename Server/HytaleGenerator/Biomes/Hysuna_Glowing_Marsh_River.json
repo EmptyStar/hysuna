@@ -2008,6 +2008,292 @@
 					}
 				}
 			}
+		},
+		{
+			"$NodeId":	"Runtime-seaweed1-aaaa-bbbb-cccc-dddd11112222",
+			"Skip":	false,
+			"Runtime":	0,
+			"Positions":	{
+				"$NodeId":	"Mesh2DPositions-seaweed2-bbbb-cccc-dddd-eeee22223333",
+				"Type":	"Mesh2D",
+				"Skip":	false,
+				"PointsY":	0,
+				"PointGenerator":	{
+					"$NodeId":	"MeshPointGenerator-seaweed3-cccc-dddd-eeee-ffff33334444",
+					"Type":	"Mesh",
+					"Jitter":	0.1,
+					"ScaleX":	4,
+					"ScaleY":	4,
+					"ScaleZ":	4,
+					"Seed":	"seaweedgrass"
+				}
+			},
+			"Assignments":	{
+				"$NodeId":	"Constant.Assignments-seaweed4-dddd-eeee-ffff-000044445555",
+				"Type":	"Constant",
+				"Prop":	{
+					"$NodeId":	"Cluster.Prop-seaweed5-eeee-ffff-0000-111155556666",
+					"Type":	"Cluster",
+					"Skip":	false,
+					"Range":	5,
+					"Seed":	"seaweedcluster",
+					"DistanceCurve":	{
+						"$NodeId":	"ManualCurve-seaweed6-aaaa-bbbb-cccc-dddd00001111",
+						"Type":	"Manual",
+						"Points":	[
+							{
+								"$NodeId":	"CurvePoint-seaweed7-bbbb-cccc-dddd-eeee11112222",
+								"In":	0,
+								"Out":	0.75
+							}
+						]
+					},
+					"WeightedProps":	[
+						{
+							"$NodeId":	"Weighted.Cluster.Prop-seaweed8-cccc-dddd-eeee-ffff22223333",
+							"Weight":	2,
+							"ColumnProp":	{
+								"$NodeId":	"Column.Prop-sw-short9-dddd-eeee-ffff-000033334444",
+								"Type":	"Column",
+								"Skip":	false,
+								"ColumnBlocks":	[
+									{
+										"$NodeId":	"Block.Column.Prop-sw-shorta-eeee-ffff-0000-111144445555",
+										"Y":	0,
+										"Material":	{
+											"$NodeId":	"Material-sw-shortb-ffff-0000-1111-222255556666",
+											"Solid":	"Plant_Seaweed_Grass",
+											"Fluid":	"Water_Source"
+										}
+									}
+								],
+								"Directionality":	{
+									"$NodeId":	"Static.Directionality-sw-shortc-1111-2222-3333-444499990000",
+									"Type":	"Static",
+									"Rotation":	0,
+									"Pattern":	{
+										"$NodeId":	"Floor.Pattern-sw-shorti-7777-8888-9999-aaaaffff0000",
+										"Type":	"Floor",
+										"Skip":	false,
+										"Origin":	{
+											"$NodeId":	"BlockSet.Pattern-sw-shortj-8888-9999-aaaa-bbbb00001111",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-sw-shortk-9999-aaaa-bbbb-cccc11112222",
+												"Inclusive":	true,
+												"Materials":	[
+													{
+														"$NodeId":	"Material-sw-shortl-aaaa-bbbb-cccc-dddd22223333",
+														"Fluid":	"Water_Source"
+													}
+												]
+											}
+										},
+										"Floor":	{
+											"$NodeId":	"BlockSet.Pattern-sw-shortm-bbbb-cccc-dddd-eeee33334444",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-sw-shortn-cccc-dddd-eeee-ffff44445555",
+												"Inclusive":	true,
+												"Materials":	[
+													{
+														"$NodeId":	"Material-sw-shorto-dddd-eeee-ffff-000055556666",
+														"Solid":	"Soil_Seaweed_Block"
+													}
+												]
+											}
+										}
+									}
+								},
+								"Scanner":	{
+									"$NodeId":	"ColumnLinear.Scanner-sw-shortp-eeee-ffff-0000-111166667777",
+									"Type":	"ColumnLinear",
+									"Skip":	false,
+									"MaxY":	50,
+									"MinY":	-50,
+									"RelativeToPosition":	false,
+									"BaseHeightName":	"Base",
+									"TopDownOrder":	true,
+									"ResultCap":	1
+								}
+							}
+						},
+						{
+							"$NodeId":	"Weighted.Cluster.Prop-seaweed-tall-cccc-dddd-eeee-ffff33334444",
+							"Weight":	1,
+							"ColumnProp":	{
+								"$NodeId":	"Column.Prop-sw-tall9-dddd-eeee-ffff-000033334444",
+								"Type":	"Column",
+								"Skip":	false,
+								"ColumnBlocks":	[
+									{
+										"$NodeId":	"Block.Column.Prop-sw-talla-eeee-ffff-0000-111144445555",
+										"Y":	0,
+										"Material":	{
+											"$NodeId":	"Material-sw-tallb-ffff-0000-1111-222255556666",
+											"Solid":	"Plant_Seaweed_Grass_Tall",
+											"Fluid":	"Water_Source"
+										}
+									}
+								],
+								"Directionality":	{
+									"$NodeId":	"Static.Directionality-sw-tallc-1111-2222-3333-444499990000",
+									"Type":	"Static",
+									"Rotation":	0,
+									"Pattern":	{
+										"$NodeId":	"And.Pattern-sw-talld-2222-3333-4444-5555aaaa0000",
+										"Type":	"And",
+										"Skip":	false,
+										"Patterns":	[
+											{
+												"$NodeId":	"Offset.Pattern-sw-tall-e-3333-4444-5555-6666bbbb0000",
+												"Type":	"Offset",
+												"Skip":	false,
+												"Pattern":	{
+													"$NodeId":	"BlockType.Pattern-sw-tall-f-4444-5555-6666-7777cccc0000",
+													"Type":	"BlockType",
+													"Skip":	false,
+													"Material":	{
+														"$NodeId":	"Material-sw-tall-g-5555-6666-7777-8888dddd0000",
+														"Fluid":	"Water_Source"
+													}
+												},
+												"Offset":	{
+													"$NodeId":	"Offset-sw-tall-h-6666-7777-8888-9999eeee0000",
+													"X":	0,
+													"Y":	1,
+													"Z":	0
+												}
+											},
+											{
+												"$NodeId":	"Floor.Pattern-sw-talli-7777-8888-9999-aaaaffff0000",
+												"Type":	"Floor",
+												"Skip":	false,
+												"Origin":	{
+													"$NodeId":	"BlockSet.Pattern-sw-tallj-8888-9999-aaaa-bbbb00001111",
+													"Type":	"BlockSet",
+													"Skip":	false,
+													"BlockSet":	{
+														"$NodeId":	"BlockSet.BlockMask-sw-tallk-9999-aaaa-bbbb-cccc11112222",
+														"Inclusive":	true,
+														"Materials":	[
+															{
+																"$NodeId":	"Material-sw-talll-aaaa-bbbb-cccc-dddd22223333",
+																"Fluid":	"Water_Source"
+															}
+														]
+													}
+												},
+												"Floor":	{
+													"$NodeId":	"BlockSet.Pattern-sw-tallm-bbbb-cccc-dddd-eeee33334444",
+													"Type":	"BlockSet",
+													"Skip":	false,
+													"BlockSet":	{
+														"$NodeId":	"BlockSet.BlockMask-sw-talln-cccc-dddd-eeee-ffff44445555",
+														"Inclusive":	true,
+														"Materials":	[
+															{
+																"$NodeId":	"Material-sw-tallo-dddd-eeee-ffff-000055556666",
+																"Solid":	"Soil_Seaweed_Block"
+															}
+														]
+													}
+												}
+											}
+										]
+									}
+								},
+								"Scanner":	{
+									"$NodeId":	"ColumnLinear.Scanner-sw-tallp-eeee-ffff-0000-111166667777",
+									"Type":	"ColumnLinear",
+									"Skip":	false,
+									"MaxY":	50,
+									"MinY":	-50,
+									"RelativeToPosition":	false,
+									"BaseHeightName":	"Base",
+									"TopDownOrder":	true,
+									"ResultCap":	1
+								}
+							}
+						}
+					],
+					"Pattern":	{
+						"$NodeId":	"And.Pattern-seaweedp-bbbb-cccc-dddd-eeee33334444",
+						"Type":	"And",
+						"Skip":	false,
+						"Patterns":	[
+							{
+								"$NodeId":	"Offset.Pattern-seaweedq-cccc-dddd-eeee-ffff44445555",
+								"Type":	"Offset",
+								"Skip":	false,
+								"Pattern":	{
+									"$NodeId":	"BlockType.Pattern-seaweedr-dddd-eeee-ffff-000055556666",
+									"Type":	"BlockType",
+									"Skip":	false,
+									"Material":	{
+										"$NodeId":	"Material-seaweeds-eeee-ffff-0000-111166667777",
+										"Fluid":	"Water_Source"
+									}
+								},
+								"Offset":	{
+									"$NodeId":	"Offset-seaweedt-ffff-0000-1111-222277778888",
+									"X":	0,
+									"Y":	1,
+									"Z":	0
+								}
+							},
+							{
+								"$NodeId":	"Floor.Pattern-seaweedu-0000-1111-2222-333388889999",
+								"Type":	"Floor",
+								"Skip":	false,
+								"Origin":	{
+									"$NodeId":	"BlockSet.Pattern-seaweedv-1111-2222-3333-444499990000",
+									"Type":	"BlockSet",
+									"Skip":	false,
+									"BlockSet":	{
+										"$NodeId":	"BlockSet.BlockMask-seaweedw-2222-3333-4444-5555aaaa0000",
+										"Inclusive":	true,
+										"Materials":	[
+											{
+												"$NodeId":	"Material-seaweedx-3333-4444-5555-6666bbbb0000",
+												"Fluid":	"Water_Source"
+											}
+										]
+									}
+								},
+								"Floor":	{
+									"$NodeId":	"BlockSet.Pattern-seaweedy-4444-5555-6666-7777cccc0000",
+									"Type":	"BlockSet",
+									"Skip":	false,
+									"BlockSet":	{
+										"$NodeId":	"BlockSet.BlockMask-seaweedz-5555-6666-7777-8888dddd0000",
+										"Inclusive":	true,
+										"Materials":	[
+											{
+												"$NodeId":	"Material-seaweed0-6666-7777-8888-9999eeee0000",
+												"Solid":	"Soil_Seaweed_Block"
+											}
+										]
+									}
+								}
+							}
+						]
+					},
+					"Scanner":	{
+						"$NodeId":	"ColumnLinear.Scanner-seaweedl-aaaa-bbbb-cccc-dddd22223333",
+						"Type":	"ColumnLinear",
+						"Skip":	false,
+						"MaxY":	50,
+						"MinY":	-50,
+						"RelativeToPosition":	false,
+						"BaseHeightName":	"Base",
+						"TopDownOrder":	true,
+						"ResultCap":	1
+					}
+				}
+			}
 		}
 	],
 	"EnvironmentProvider":	{
