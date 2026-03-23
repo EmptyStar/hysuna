@@ -1513,10 +1513,10 @@
 									"$NodeId":	"BlockMask-shortgrassbm-aaaa-bbbb-cccc-dddd44445555",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-shortgrassdr-bbbb-cccc-dddd-eeee55556666",
-										"Inclusive":	true,
+										"Inclusive":	false,
 										"Materials":	[{
 												"$NodeId":	"Material-shortgrassdr1-cccc-dddd-eeee-ffff66667777",
-												"Fluid":	"Water_Source"
+												"Solid":	"Empty"
 											}]
 									}
 								},
@@ -1591,10 +1591,10 @@
 									"$NodeId":	"BlockMask-lushgroundbm-aaaa-bbbb-cccc-dddd55556666",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-lushgrounddr-bbbb-cccc-dddd-eeee66667777",
-										"Inclusive":	true,
+										"Inclusive":	false,
 										"Materials":	[{
 												"$NodeId":	"Material-lushgrounddr1-cccc-dddd-eeee-ffff77778888",
-												"Fluid":	"Water_Source"
+												"Solid":	"Empty"
 											}]
 									}
 								},
@@ -1669,10 +1669,10 @@
 									"$NodeId":	"BlockMask-gnarledtallbm-aaaa-bbbb-cccc-dddd99990000",
 									"DontReplace":	{
 										"$NodeId":	"BlockSet.BlockMask-gnarledtalldr-bbbb-cccc-dddd-eeee99990000",
-										"Inclusive":	true,
+										"Inclusive":	false,
 										"Materials":	[{
 												"$NodeId":	"Material-gnarledtalldr1-cccc-dddd-eeee-ffff99990000",
-												"Fluid":	"Water_Source"
+												"Solid":	"Empty"
 											}]
 									}
 								},
