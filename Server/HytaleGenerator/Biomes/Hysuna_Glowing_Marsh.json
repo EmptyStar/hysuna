@@ -2144,43 +2144,31 @@
 			"$NodeId":	"ImportedDensityNode-tint2222-3333-4444-5555-66667777888",
 			"Type":	"Imported",
 			"Skip":	false,
-			"Name": "TerrainHeight"
+			"Name":	"TintNoise"
 		},
 		"Delimiters":	[{
 				"$NodeId":	"Delimiter.DensityDelimited.TintProvider-tint3333-4444-5555-6666-77778888999",
 				"Tint":	{
 					"$NodeId":	"Constant.TintProvider-tint4444-5555-6666-7777-8888999aaaa",
 					"Type":	"Constant",
-					"Color":	"#1a3c6f"
+					"Color":	"#103f79"
 				},
 				"Range":	{
 					"$NodeId":	"Decimal.Range-tint5555-6666-7777-8888-9999aaaabbbb",
-					"MinInclusive":	0,
-					"MaxExclusive":	0.25
+					"MinInclusive":	-1,
+					"MaxExclusive":	-0.2
 				}
 			}, {
 				"$NodeId":	"Delimiter.DensityDelimited.TintProvider-tint3333-4444-5555-6666-77778888999",
 				"Tint":	{
 					"$NodeId":	"Constant.TintProvider-tint4444-5555-6666-7777-8888999aaaa",
 					"Type":	"Constant",
-					"Color":	"#1a4680"
+					"Color":	"#104682"
 				},
 				"Range":	{
 					"$NodeId":	"Decimal.Range-tint5555-6666-7777-8888-9999aaaabbbb",
-					"MinInclusive":	0.25,
-					"MaxExclusive":	0.75
-				}
-			}, {
-				"$NodeId":	"Delimiter.DensityDelimited.TintProvider-tint6666-7777-8888-9999-aaaabbbbccc",
-				"Tint":	{
-					"$NodeId":	"Constant.TintProvider-tint7777-8888-9999-aaaa-bbbbccccdddd",
-					"Type":	"Constant",
-					"Color":	"#1a4d84"
-				},
-				"Range":	{
-					"$NodeId":	"Decimal.Range-tint8888-9999-aaaa-bbbb-ccccddddeeee",
-					"MinInclusive":	0.75,
-					"MaxExclusive":	2
+					"MinInclusive":	-0.2,
+					"MaxExclusive":	1
 				}
 			}]
 	},
