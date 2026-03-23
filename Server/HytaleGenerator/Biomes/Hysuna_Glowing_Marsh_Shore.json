@@ -918,6 +918,9 @@
 												"Materials":	[{
 														"$NodeId":	"Material-grassg-8888-9999-aaaa-bbbbeeeeffff",
 														"Solid":	"Soil_Grass_Wet"
+													}, {
+														"$NodeId":	"Material-grassg2-8888-9999-aaaa-bbbbeeeeffff",
+														"Solid":	"Soil_Mud"
 													}]
 											}
 										}
@@ -992,6 +995,9 @@
 												"Materials":	[{
 														"$NodeId":	"Material-grasstallk-8888-9999-aaaa-bbbbffff0000",
 														"Solid":	"Soil_Grass_Wet"
+													}, {
+														"$NodeId":	"Material-grasstallk2-8888-9999-aaaa-bbbbffff0000",
+														"Solid":	"Soil_Mud"
 													}]
 											}
 										}
@@ -1037,6 +1043,9 @@
 								"Materials":	[{
 										"$NodeId":	"Material-grasso-1111-2222-3333-444477778888",
 										"Solid":	"Soil_Grass_Wet"
+									}, {
+										"$NodeId":	"Material-grasso2-1111-2222-3333-444477778888",
+										"Solid":	"Soil_Mud"
 									}]
 							}
 						}
@@ -1138,6 +1147,9 @@
 												"Materials":	[{
 														"$NodeId":	"Material-shortgrassf-8888-9999-aaaa-bbbb11112222",
 														"Solid":	"Soil_Grass_Wet"
+													}, {
+														"$NodeId":	"Material-shortgrassf2-8888-9999-aaaa-bbbb11112222",
+														"Solid":	"Soil_Mud"
 													}]
 											}
 										}
@@ -1216,6 +1228,9 @@
 												"Materials":	[{
 														"$NodeId":	"Material-lushgroundf-8888-9999-aaaa-bbbb22223333",
 														"Solid":	"Soil_Grass_Wet"
+													}, {
+														"$NodeId":	"Material-lushgroundf2-8888-9999-aaaa-bbbb22223333",
+														"Solid":	"Soil_Mud"
 													}]
 											}
 										}
@@ -1294,6 +1309,9 @@
 												"Materials":	[{
 														"$NodeId":	"Material-gnarledtallf-8888-9999-aaaa-bbbb99990000",
 														"Solid":	"Soil_Grass_Wet"
+													}, {
+														"$NodeId":	"Material-gnarledtallf2-8888-9999-aaaa-bbbb99990000",
+														"Solid":	"Soil_Mud"
 													}]
 											}
 										}
