@@ -1,11 +1,11 @@
 {
-	"$NodeId":	"SimplexNoise2DDensityNode-tint0001-0002-0003-0004-000500060007",
-	"Type":	"SimplexNoise2D",
-	"ExportAs":	"TintNoise",
-	"Skip":	false,
-	"Lacunarity":	4,
-	"Persistence":	0.75,
-	"Octaves":	2,
-	"Scale":	85,
-	"Seed":	"TintNoise"
+  "$NodeId": "SimplexNoise2DDensityNode-tint0001-0002-0003-0004-000500060007",
+  "Type": "SimplexNoise2D",
+  "ExportAs": "TintNoise",
+  "Skip": false,
+  "Lacunarity": 4,
+  "Persistence": 0.75,
+  "Octaves": 2,
+  "Scale": 85,
+  "Seed": "TintNoise"
 }

@@ -2,9 +2,7 @@
   "TranslationProperties": {
     "Name": "server.items.Plant_Crop_Mushroom_Block_Blue_Mycelium.name"
   },
-  "Categories": [
-    "Blocks.Plants"
-  ],
+  "Categories": ["Blocks.Plants"],
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Model",
@@ -45,25 +43,14 @@
   ],
   "PlayerAnimationsId": "Block",
   "Tags": {
-    "Type": [
-      "Plant"
-    ],
-    "Family": [
-      "Crop"
-    ]
+    "Type": ["Plant"],
+    "Family": ["Crop"]
   },
   "$Comment": "   ",
   "IconProperties": {
     "Scale": 0.4,
-    "Translation": [
-      0,
-      -3.9
-    ],
-    "Rotation": [
-      22.5,
-      45,
-      22.5
-    ]
+    "Translation": [0, -3.9],
+    "Rotation": [22.5, 45, 22.5]
   },
   "Icon": "Icons/ItemsGenerated/Plant_Crop_Mushroom_Block_Blue_Mycelium.png",
   "ItemSoundSetId": "ISS_Items_Foliage"
