@@ -541,6 +541,562 @@
   },
   "Props": [
     {
+      "$NodeId": "Runtime-rvbush1-aaaa-bbbb-cccc-dddd11112222",
+      "Skip": false,
+      "Runtime": 0,
+      "Positions": {
+        "$NodeId": "Mesh2DPositions-rvbush2-bbbb-cccc-dddd-eeee22223333",
+        "Type": "Mesh2D",
+        "Skip": false,
+        "PointsY": 0,
+        "PointGenerator": {
+          "$NodeId": "MeshPointGenerator-rvbush3-cccc-dddd-eeee-ffff33334444",
+          "Type": "Mesh",
+          "Jitter": 0.35,
+          "ScaleX": 90,
+          "ScaleY": 90,
+          "ScaleZ": 90,
+          "Seed": "marshbush"
+        }
+      },
+      "Assignments": {
+        "$NodeId": "Constant.Assignments-rvbush4-dddd-eeee-ffff-000044445555",
+        "Type": "Constant",
+        "Prop": {
+          "$NodeId": "Cluster.Prop-rvbush5-eeee-ffff-0000-111155556666",
+          "Type": "Cluster",
+          "Skip": false,
+          "Range": 3,
+          "Seed": "bushcluster",
+          "DistanceCurve": {
+            "$NodeId": "DistanceSCurve-rvbush6-aaaa-bbbb-cccc-dddd00001111",
+            "Type": "DistanceS",
+            "ExponentA": 1,
+            "ExponentB": 16,
+            "Transition": 0.5,
+            "TransitionSmooth": 0.1,
+            "Range": 3
+          },
+          "WeightedProps": [
+            {
+              "$NodeId": "Weighted.Cluster.Prop-rvbush9-dddd-eeee-ffff-000033334444",
+              "Weight": 80,
+              "ColumnProp": {
+                "$NodeId": "Column.Prop-rvbusha-eeee-ffff-0000-111144445555",
+                "Type": "Column",
+                "Skip": false,
+                "ColumnBlocks": [
+                  {
+                    "$NodeId": "Block.Column.Prop-rvbushb-ffff-0000-1111-222266667777",
+                    "Y": 0,
+                    "Material": {
+                      "$NodeId": "Material-rvbushc-0000-1111-2222-333377778888",
+                      "Solid": "Plant_Bush_Wet"
+                    }
+                  }
+                ],
+                "BlockMask": {
+                  "$NodeId": "BlockMask-rvbushbm-aaaa-bbbb-cccc-dddd11112222",
+                  "DontReplace": {
+                    "$NodeId": "BlockSet.BlockMask-rvbushdr-bbbb-cccc-dddd-eeee22223333",
+                    "Inclusive": true,
+                    "Materials": [
+                      {
+                        "$NodeId": "Material-rvbushdr1-cccc-dddd-eeee-ffff33334444",
+                        "Fluid": "Water_Source"
+                      }
+                    ]
+                  }
+                },
+                "Directionality": {
+                  "$NodeId": "Static.Directionality-rvbushd-1111-2222-3333-444477778888",
+                  "Type": "Static",
+                  "Rotation": 0,
+                  "Pattern": {
+                    "$NodeId": "Floor.Pattern-rvbushe-2222-3333-4444-555588889999",
+                    "Type": "Floor",
+                    "Skip": false,
+                    "Origin": {
+                      "$NodeId": "BlockSet.Pattern-rvbushf-3333-4444-5555-66669999aaaa",
+                      "Type": "BlockSet",
+                      "Skip": false,
+                      "BlockSet": {
+                        "$NodeId": "BlockSet.BlockMask-rvbushg-4444-5555-6666-7777aaaabbbb",
+                        "Inclusive": true,
+                        "Materials": [
+                          {
+                            "$NodeId": "Material-rvbushh-5555-6666-7777-8888bbbbcccc",
+                            "Solid": "Empty"
+                          }
+                        ]
+                      }
+                    },
+                    "Floor": {
+                      "$NodeId": "BlockSet.Pattern-rvbushi-6666-7777-8888-9999ccccdddd",
+                      "Type": "BlockSet",
+                      "Skip": false,
+                      "BlockSet": {
+                        "$NodeId": "BlockSet.BlockMask-rvbushj-7777-8888-9999-aaaaddddeeee",
+                        "Inclusive": true,
+                        "Materials": [
+                          {
+                            "$NodeId": "Material-rvbushk-8888-9999-aaaa-bbbbeeeeffff",
+                            "Solid": "Soil_Grass_Wet"
+                          },
+                          {
+                            "$NodeId": "Material-rvbushk2-8888-9999-aaaa-bbbbeeeeffff",
+                            "Solid": "Soil_Mud"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "Scanner": {
+                  "$NodeId": "ColumnLinear.Scanner-rvbushl-aaaa-bbbb-cccc-dddd00001111",
+                  "Type": "ColumnLinear",
+                  "Skip": false,
+                  "MaxY": 5,
+                  "MinY": -5,
+                  "RelativeToPosition": true,
+                  "BaseHeightName": "Base",
+                  "TopDownOrder": true,
+                  "ResultCap": 1
+                }
+              }
+            },
+            {
+              "$NodeId": "Weighted.Cluster.Prop-rvbushberry-dddd-eeee-ffff-000044445555",
+              "Weight": 20,
+              "ColumnProp": {
+                "$NodeId": "Column.Prop-rvbushberrya-eeee-ffff-0000-111155556666",
+                "Type": "Column",
+                "Skip": false,
+                "ColumnBlocks": [
+                  {
+                    "$NodeId": "Block.Column.Prop-rvbushberryb-ffff-0000-1111-222277778888",
+                    "Y": 0,
+                    "Material": {
+                      "$NodeId": "Material-rvbushberryc-0000-1111-2222-333388889999",
+                      "Solid": "*Plant_Crop_Berry_Wet_Block_State_Definitions_StageFinal"
+                    }
+                  }
+                ],
+                "BlockMask": {
+                  "$NodeId": "BlockMask-rvbushberrybm-aaaa-bbbb-cccc-dddd22223333",
+                  "DontReplace": {
+                    "$NodeId": "BlockSet.BlockMask-rvbushberrydr-bbbb-cccc-dddd-eeee33334444",
+                    "Inclusive": true,
+                    "Materials": [
+                      {
+                        "$NodeId": "Material-rvbushberrydr1-cccc-dddd-eeee-ffff44445555",
+                        "Fluid": "Water_Source"
+                      }
+                    ]
+                  }
+                },
+                "Directionality": {
+                  "$NodeId": "Static.Directionality-rvbushberryd-1111-2222-3333-444488889999",
+                  "Type": "Static",
+                  "Rotation": 0,
+                  "Pattern": {
+                    "$NodeId": "Floor.Pattern-rvbushberrye-2222-3333-4444-555599990000",
+                    "Type": "Floor",
+                    "Skip": false,
+                    "Origin": {
+                      "$NodeId": "BlockSet.Pattern-rvbushberryf-3333-4444-5555-6666aaaa0000",
+                      "Type": "BlockSet",
+                      "Skip": false,
+                      "BlockSet": {
+                        "$NodeId": "BlockSet.BlockMask-rvbushberryg-4444-5555-6666-7777bbbb0000",
+                        "Inclusive": true,
+                        "Materials": [
+                          {
+                            "$NodeId": "Material-rvbushberryh-5555-6666-7777-8888cccc0000",
+                            "Solid": "Empty"
+                          }
+                        ]
+                      }
+                    },
+                    "Floor": {
+                      "$NodeId": "BlockSet.Pattern-rvbushberryi-6666-7777-8888-9999dddd0000",
+                      "Type": "BlockSet",
+                      "Skip": false,
+                      "BlockSet": {
+                        "$NodeId": "BlockSet.BlockMask-rvbushberryj-7777-8888-9999-aaaaeeeee000",
+                        "Inclusive": true,
+                        "Materials": [
+                          {
+                            "$NodeId": "Material-rvbushberryk-8888-9999-aaaa-bbbbffff0000",
+                            "Solid": "Soil_Grass_Wet"
+                          },
+                          {
+                            "$NodeId": "Material-rvbushberryk2-8888-9999-aaaa-bbbbffff0000",
+                            "Solid": "Soil_Mud"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "Scanner": {
+                  "$NodeId": "ColumnLinear.Scanner-rvbushberryl-aaaa-bbbb-cccc-dddd11110000",
+                  "Type": "ColumnLinear",
+                  "Skip": false,
+                  "MaxY": 5,
+                  "MinY": -5,
+                  "RelativeToPosition": true,
+                  "BaseHeightName": "Base",
+                  "TopDownOrder": true,
+                  "ResultCap": 1
+                }
+              }
+            }
+          ],
+          "Pattern": {
+            "$NodeId": "Floor.Pattern-rvbushm-bbbb-cccc-dddd-eeee11112222",
+            "Type": "Floor",
+            "Skip": false,
+            "Origin": {
+              "$NodeId": "BlockSet.Pattern-rvbushn-cccc-dddd-eeee-ffff22223333",
+              "Type": "BlockSet",
+              "Skip": false,
+              "BlockSet": {
+                "$NodeId": "BlockSet.BlockMask-rvbusho-dddd-eeee-ffff-000033334444",
+                "Inclusive": true,
+                "Materials": [
+                  {
+                    "$NodeId": "Material-rvbushp-eeee-ffff-0000-111144445555",
+                    "Solid": "Empty"
+                  }
+                ]
+              }
+            },
+            "Floor": {
+              "$NodeId": "BlockSet.Pattern-rvbushq-ffff-0000-1111-222255556666",
+              "Type": "BlockSet",
+              "Skip": false,
+              "BlockSet": {
+                "$NodeId": "BlockSet.BlockMask-rvbushr-0000-1111-2222-333366667777",
+                "Inclusive": true,
+                "Materials": [
+                  {
+                    "$NodeId": "Material-rvbushs-1111-2222-3333-444477778888",
+                    "Solid": "Soil_Grass_Wet"
+                  },
+                  {
+                    "$NodeId": "Material-rvbushs2-1111-2222-3333-444477778888",
+                    "Solid": "Soil_Mud"
+                  }
+                ]
+              }
+            }
+          },
+          "Scanner": {
+            "$NodeId": "ColumnLinear.Scanner-rvbusht-3333-4444-5555-66669999aaaa",
+            "Type": "ColumnLinear",
+            "Skip": false,
+            "MaxY": 30,
+            "MinY": -5,
+            "RelativeToPosition": false,
+            "BaseHeightName": "Base",
+            "TopDownOrder": true,
+            "ResultCap": 1
+          }
+        }
+      }
+    },
+    {
+      "$NodeId": "Runtime-rvbushtop1-aaaa-bbbb-cccc-dddd11112222",
+      "Skip": false,
+      "Runtime": 0,
+      "Positions": {
+        "$NodeId": "Mesh2DPositions-rvbushtop2-bbbb-cccc-dddd-eeee22223333",
+        "Type": "Mesh2D",
+        "Skip": false,
+        "PointsY": 0,
+        "PointGenerator": {
+          "$NodeId": "MeshPointGenerator-rvbushtop3-cccc-dddd-eeee-ffff33334444",
+          "Type": "Mesh",
+          "Jitter": 0.35,
+          "ScaleX": 90,
+          "ScaleY": 90,
+          "ScaleZ": 90,
+          "Seed": "marshbush"
+        }
+      },
+      "Assignments": {
+        "$NodeId": "Constant.Assignments-rvbushtop4-dddd-eeee-ffff-000044445555",
+        "Type": "Constant",
+        "Prop": {
+          "$NodeId": "Cluster.Prop-rvbushtop5-eeee-ffff-0000-111155556666",
+          "Type": "Cluster",
+          "Skip": false,
+          "Range": 1,
+          "Seed": "bushtopcluster",
+          "DistanceCurve": {
+            "$NodeId": "DistanceSCurve-rvbushtop6-aaaa-bbbb-cccc-dddd00001111",
+            "Type": "DistanceS",
+            "ExponentA": 0.25,
+            "ExponentB": 4,
+            "Transition": 0.5,
+            "TransitionSmooth": 0.1,
+            "Range": 1
+          },
+          "WeightedProps": [
+            {
+              "$NodeId": "Weighted.Cluster.Prop-rvbushtop7-dddd-eeee-ffff-000033334444",
+              "Weight": 90,
+              "ColumnProp": {
+                "$NodeId": "Column.Prop-rvbushtop8-eeee-ffff-0000-111144445555",
+                "Type": "Column",
+                "Skip": false,
+                "ColumnBlocks": [
+                  {
+                    "$NodeId": "Block.Column.Prop-rvbushtop9-ffff-0000-1111-222266667777",
+                    "Y": 0,
+                    "Material": {
+                      "$NodeId": "Material-rvbushtopa-0000-1111-2222-333377778888",
+                      "Solid": "Plant_Bush_Wet"
+                    }
+                  }
+                ],
+                "BlockMask": {
+                  "$NodeId": "BlockMask-rvbushtopbm-aaaa-bbbb-cccc-dddd11112222",
+                  "DontReplace": {
+                    "$NodeId": "BlockSet.BlockMask-rvbushtopdr-bbbb-cccc-dddd-eeee22223333",
+                    "Inclusive": true,
+                    "Materials": [
+                      {
+                        "$NodeId": "Material-rvbushtopdr1-cccc-dddd-eeee-ffff33334444",
+                        "Fluid": "Water_Source"
+                      }
+                    ]
+                  }
+                },
+                "Directionality": {
+                  "$NodeId": "Static.Directionality-rvbushtopb-1111-2222-3333-444477778888",
+                  "Type": "Static",
+                  "Rotation": 0,
+                  "Pattern": {
+                    "$NodeId": "Floor.Pattern-rvbushtopc-2222-3333-4444-555588889999",
+                    "Type": "Floor",
+                    "Skip": false,
+                    "Origin": {
+                      "$NodeId": "BlockSet.Pattern-rvbushtopd-3333-4444-5555-66669999aaaa",
+                      "Type": "BlockSet",
+                      "Skip": false,
+                      "BlockSet": {
+                        "$NodeId": "BlockSet.BlockMask-rvbushtope-4444-5555-6666-7777aaaabbbb",
+                        "Inclusive": true,
+                        "Materials": [
+                          {
+                            "$NodeId": "Material-rvbushtopf-5555-6666-7777-8888bbbbcccc",
+                            "Solid": "Empty"
+                          }
+                        ]
+                      }
+                    },
+                    "Floor": {
+                      "$NodeId": "BlockSet.Pattern-rvbushtopg-6666-7777-8888-9999ccccdddd",
+                      "Type": "BlockSet",
+                      "Skip": false,
+                      "BlockSet": {
+                        "$NodeId": "BlockSet.BlockMask-rvbushtoph-7777-8888-9999-aaaaddddeeee",
+                        "Inclusive": true,
+                        "Materials": [
+                          {
+                            "$NodeId": "Material-rvbushtopi-8888-9999-aaaa-bbbbeeeeffff",
+                            "Solid": "Soil_Grass_Wet"
+                          },
+                          {
+                            "$NodeId": "Material-rvbushtopi2-8888-9999-aaaa-bbbbeeeeffff",
+                            "Solid": "Soil_Mud"
+                          },
+                          {
+                            "$NodeId": "Material-rvbushtopi3-8888-9999-aaaa-bbbbffff0011",
+                            "Solid": "Plant_Bush_Wet"
+                          },
+                          {
+                            "$NodeId": "Material-rvbushtopi4-8888-9999-aaaa-bbbbffff0022",
+                            "Solid": "*Plant_Crop_Berry_Wet_Block_State_Definitions_StageFinal"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "Scanner": {
+                  "$NodeId": "ColumnLinear.Scanner-rvbushtopj-aaaa-bbbb-cccc-dddd00001111",
+                  "Type": "ColumnLinear",
+                  "Skip": false,
+                  "MaxY": 5,
+                  "MinY": -5,
+                  "RelativeToPosition": true,
+                  "BaseHeightName": "Base",
+                  "TopDownOrder": true,
+                  "ResultCap": 1
+                }
+              }
+            },
+            {
+              "$NodeId": "Weighted.Cluster.Prop-rvbushtopberry-dddd-eeee-ffff-000044445555",
+              "Weight": 10,
+              "ColumnProp": {
+                "$NodeId": "Column.Prop-rvbushtopberrya-eeee-ffff-0000-111155556666",
+                "Type": "Column",
+                "Skip": false,
+                "ColumnBlocks": [
+                  {
+                    "$NodeId": "Block.Column.Prop-rvbushtopberryb-ffff-0000-1111-222277778888",
+                    "Y": 0,
+                    "Material": {
+                      "$NodeId": "Material-rvbushtopberryc-0000-1111-2222-333388889999",
+                      "Solid": "*Plant_Crop_Berry_Wet_Block_State_Definitions_StageFinal"
+                    }
+                  }
+                ],
+                "BlockMask": {
+                  "$NodeId": "BlockMask-rvbushtopberrybm-aaaa-bbbb-cccc-dddd22223333",
+                  "DontReplace": {
+                    "$NodeId": "BlockSet.BlockMask-rvbushtopberrydr-bbbb-cccc-dddd-eeee33334444",
+                    "Inclusive": true,
+                    "Materials": [
+                      {
+                        "$NodeId": "Material-rvbushtopberrydr1-cccc-dddd-eeee-ffff44445555",
+                        "Fluid": "Water_Source"
+                      }
+                    ]
+                  }
+                },
+                "Directionality": {
+                  "$NodeId": "Static.Directionality-rvbushtopberryd-1111-2222-3333-444488889999",
+                  "Type": "Static",
+                  "Rotation": 0,
+                  "Pattern": {
+                    "$NodeId": "Floor.Pattern-rvbushtopberrye-2222-3333-4444-555599990000",
+                    "Type": "Floor",
+                    "Skip": false,
+                    "Origin": {
+                      "$NodeId": "BlockSet.Pattern-rvbushtopberryf-3333-4444-5555-6666aaaa0000",
+                      "Type": "BlockSet",
+                      "Skip": false,
+                      "BlockSet": {
+                        "$NodeId": "BlockSet.BlockMask-rvbushtopberryg-4444-5555-6666-7777bbbb0000",
+                        "Inclusive": true,
+                        "Materials": [
+                          {
+                            "$NodeId": "Material-rvbushtopberryh-5555-6666-7777-8888cccc0000",
+                            "Solid": "Empty"
+                          }
+                        ]
+                      }
+                    },
+                    "Floor": {
+                      "$NodeId": "BlockSet.Pattern-rvbushtopberryi-6666-7777-8888-9999dddd0000",
+                      "Type": "BlockSet",
+                      "Skip": false,
+                      "BlockSet": {
+                        "$NodeId": "BlockSet.BlockMask-rvbushtopberryj-7777-8888-9999-aaaaeeeee000",
+                        "Inclusive": true,
+                        "Materials": [
+                          {
+                            "$NodeId": "Material-rvbushtopberryk-8888-9999-aaaa-bbbbffff0000",
+                            "Solid": "Soil_Grass_Wet"
+                          },
+                          {
+                            "$NodeId": "Material-rvbushtopberryk2-8888-9999-aaaa-bbbbffff0000",
+                            "Solid": "Soil_Mud"
+                          },
+                          {
+                            "$NodeId": "Material-rvbushtopberryk3-8888-9999-aaaa-bbbbffff0033",
+                            "Solid": "Plant_Bush_Wet"
+                          },
+                          {
+                            "$NodeId": "Material-rvbushtopberryk4-8888-9999-aaaa-bbbbffff0044",
+                            "Solid": "*Plant_Crop_Berry_Wet_Block_State_Definitions_StageFinal"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "Scanner": {
+                  "$NodeId": "ColumnLinear.Scanner-rvbushtopberryl-aaaa-bbbb-cccc-dddd11110000",
+                  "Type": "ColumnLinear",
+                  "Skip": false,
+                  "MaxY": 5,
+                  "MinY": -5,
+                  "RelativeToPosition": true,
+                  "BaseHeightName": "Base",
+                  "TopDownOrder": true,
+                  "ResultCap": 1
+                }
+              }
+            }
+          ],
+          "Pattern": {
+            "$NodeId": "Floor.Pattern-rvbushtopm-bbbb-cccc-dddd-eeee11112222",
+            "Type": "Floor",
+            "Skip": false,
+            "Origin": {
+              "$NodeId": "BlockSet.Pattern-rvbushtopn-cccc-dddd-eeee-ffff22223333",
+              "Type": "BlockSet",
+              "Skip": false,
+              "BlockSet": {
+                "$NodeId": "BlockSet.BlockMask-rvbushtopo-dddd-eeee-ffff-000033334444",
+                "Inclusive": true,
+                "Materials": [
+                  {
+                    "$NodeId": "Material-rvbushtopp-eeee-ffff-0000-111144445555",
+                    "Solid": "Empty"
+                  }
+                ]
+              }
+            },
+            "Floor": {
+              "$NodeId": "BlockSet.Pattern-rvbushtopq-ffff-0000-1111-222255556666",
+              "Type": "BlockSet",
+              "Skip": false,
+              "BlockSet": {
+                "$NodeId": "BlockSet.BlockMask-rvbushtopr-0000-1111-2222-333366667777",
+                "Inclusive": true,
+                "Materials": [
+                  {
+                    "$NodeId": "Material-rvbushtops-1111-2222-3333-444477778888",
+                    "Solid": "Soil_Grass_Wet"
+                  },
+                  {
+                    "$NodeId": "Material-rvbushtops2-1111-2222-3333-444477778888",
+                    "Solid": "Soil_Mud"
+                  },
+                  {
+                    "$NodeId": "Material-rvbushtops3-1111-2222-3333-444477880011",
+                    "Solid": "Plant_Bush_Wet"
+                  },
+                  {
+                    "$NodeId": "Material-rvbushtops4-1111-2222-3333-444477880022",
+                    "Solid": "*Plant_Crop_Berry_Wet_Block_State_Definitions_StageFinal"
+                  }
+                ]
+              }
+            }
+          },
+          "Scanner": {
+            "$NodeId": "ColumnLinear.Scanner-rvbushtopt-3333-4444-5555-66669999aaaa",
+            "Type": "ColumnLinear",
+            "Skip": false,
+            "MaxY": 30,
+            "MinY": -5,
+            "RelativeToPosition": false,
+            "BaseHeightName": "Base",
+            "TopDownOrder": true,
+            "ResultCap": 1
+          }
+        }
+      }
+    },
+    {
       "$NodeId": "Runtime-blue1-5555-6666-7777-8888bbbbcccc",
       "Skip": false,
       "Runtime": 0,
