@@ -1604,6 +1604,96 @@
       }
     },
     {
+      "$NodeId": "Runtime-mana2-1111-2222-3333-4444aaaabbbb",
+      "Skip": false,
+      "Runtime": 0,
+      "Positions": {
+        "$NodeId": "Mesh2DPositions-mana2-2222-3333-4444-5555bbbbcccc",
+        "Type": "Mesh2D",
+        "Skip": false,
+        "PointsY": 0,
+        "PointGenerator": {
+          "$NodeId": "MeshPointGenerator-mana2-3333-4444-5555-6666ccccdddd",
+          "Type": "Mesh",
+          "Jitter": 0.5,
+          "ScaleX": 125,
+          "ScaleY": 125,
+          "ScaleZ": 125,
+          "Seed": "mana2mush"
+        }
+      },
+      "Assignments": {
+        "$NodeId": "Constant.Assignments-mana2-4444-5555-6666-7777ddddeeee",
+        "Type": "Constant",
+        "Prop": {
+          "$NodeId": "Column.Prop-mana2-5555-6666-7777-8888eeeeffff",
+          "Type": "Column",
+          "Skip": false,
+          "ColumnBlocks": [
+            {
+              "$NodeId": "Block.Column.Prop-mana2-6666-7777-8888-9999ffff0000",
+              "Y": 0,
+              "Material": {
+                "$NodeId": "Material-mana2-7777-8888-9999-aaaa00001111",
+                "Solid": "Plant_Crop_Mana2"
+              }
+            }
+          ],
+          "Directionality": {
+            "$NodeId": "Static.Directionality-mana2-8888-9999-aaaa-bbbb11112222",
+            "Type": "Static",
+            "Rotation": 0,
+            "Pattern": {
+              "$NodeId": "Floor.Pattern-mana2-9999-aaaa-bbbb-cccc22223333",
+              "Type": "Floor",
+              "Skip": false,
+              "Origin": {
+                "$NodeId": "BlockSet.Pattern-mana2-aaaa-bbbb-cccc-dddd33334444",
+                "Type": "BlockSet",
+                "Skip": false,
+                "BlockSet": {
+                  "$NodeId": "BlockSet.BlockMask-mana2-bbbb-cccc-dddd-eeee44445555",
+                  "Inclusive": true,
+                  "Materials": [
+                    {
+                      "$NodeId": "Material-mana2-cccc-dddd-eeee-ffff55556666",
+                      "Solid": "Empty"
+                    }
+                  ]
+                }
+              },
+              "Floor": {
+                "$NodeId": "BlockSet.Pattern-mana2-dddd-eeee-ffff-000066667777",
+                "Type": "BlockSet",
+                "Skip": false,
+                "BlockSet": {
+                  "$NodeId": "BlockSet.BlockMask-mana2-eeee-ffff-0000-111177778888",
+                  "Inclusive": true,
+                  "Materials": [
+                    {
+                      "$NodeId": "Material-mana2-ffff-0000-1111-222288889999",
+                      "Solid": "Soil_Grass_Wet"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "Scanner": {
+            "$NodeId": "ColumnLinear.Scanner-mana2-0000-1111-2222-33339999aaaa",
+            "Type": "ColumnLinear",
+            "Skip": false,
+            "MaxY": 30,
+            "MinY": -5,
+            "RelativeToPosition": false,
+            "BaseHeightName": "Base",
+            "TopDownOrder": true,
+            "ResultCap": 1
+          }
+        }
+      }
+    },
+    {
       "$NodeId": "Runtime-orange1-4444-5555-6666-7777eeeeffff",
       "Skip": false,
       "Runtime": 0,
