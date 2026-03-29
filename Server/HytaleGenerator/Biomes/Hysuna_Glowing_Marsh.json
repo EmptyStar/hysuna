@@ -385,7 +385,7 @@
                   {
                     "$NodeId": "WeightedPath.Prefab.Prop-medmush6-ffff-0000-1111-222266667777",
                     "Path": "Mushroom_Medium_Overgrown",
-                    "Weight": 74.5
+                    "Weight": 72
                   },
                   {
                     "$NodeId": "WeightedPath.Prefab.Prop-nonemush6-ffff-0000-1111-222255558888",
@@ -395,7 +395,7 @@
                   {
                     "$NodeId": "WeightedPath.Prefab.Prop-deadtree6-0000-1111-2222-333366669999",
                     "Path": "Trees/Ash_twisted_Large",
-                    "Weight": 4
+                    "Weight": 6.5
                   }
                 ],
                 "LegacyPath": false,
@@ -508,12 +508,12 @@
                   {
                     "$NodeId": "WeightedPath-deadtree6b-ffff-0000-1111-222288889999",
                     "Path": "Trees/Ash_twisted_Giant",
-                    "Weight": 50
+                    "Weight": 46
                   },
                   {
                     "$NodeId": "WeightedPath-deadtree6c-ffff-0000-1111-222288889999",
                     "Path": "Mushroom_Medium_Overgrown",
-                    "Weight": 6
+                    "Weight": 10
                   }
                 ],
                 "LegacyPath": false,
