@@ -21,7 +21,7 @@
   "IsSavingPlayers": true,
   "WorldGen": {
     "Type": "HytaleGenerator",
-    "WorldStructure": "Hysuna_World"
+    "WorldStructure": "Hysuna_Glowing_Marsh"
   },
   "SpawnProvider": {
     "Id": "Global",
