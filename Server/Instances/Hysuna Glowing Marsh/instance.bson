@@ -1,5 +1,5 @@
 {
-  "$Comment": "Hysuna Test World - A simple test instance for the Hysuna biome mod",
+  "$Comment": "Hysuna Glowing Marsh - An instance dedicated to the Hysuna Glowing Marsh biome",
   "RequiredPlugins": {},
   "ChunkStorage": {
     "Type": "Hytale"
