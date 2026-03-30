@@ -4,11 +4,11 @@
     {
       "Biome": "Hysuna_Glowing_Marsh",
       "Min": -1,
-      "Max": -0.5
+      "Max": -0.6
     },
     {
       "Biome": "Hysuna_Glowing_Marsh_River",
-      "Min": -0.5,
+      "Min": -0.6,
       "Max": 0
     },
     {
