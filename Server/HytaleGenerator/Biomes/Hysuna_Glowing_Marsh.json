@@ -617,7 +617,7 @@
           "WeightedProps": [
             {
               "$NodeId": "Weighted.Cluster.Prop-bush9-dddd-eeee-ffff-000033334444",
-              "Weight": 80,
+              "Weight": 70,
               "ColumnProp": {
                 "$NodeId": "Column.Prop-busha-eeee-ffff-0000-111144445555",
                 "Type": "Column",
@@ -704,7 +704,7 @@
             },
             {
               "$NodeId": "Weighted.Cluster.Prop-bushberry-dddd-eeee-ffff-000044445555",
-              "Weight": 20,
+              "Weight": 30,
               "ColumnProp": {
                 "$NodeId": "Column.Prop-bushberrya-eeee-ffff-0000-111155556666",
                 "Type": "Column",
