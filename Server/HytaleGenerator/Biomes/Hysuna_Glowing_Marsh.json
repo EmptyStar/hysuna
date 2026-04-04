@@ -503,12 +503,12 @@
                   {
                     "$NodeId": "WeightedPath-deadtree6a-ffff-0000-1111-222277778888",
                     "Path": "Trees/Ash_twisted_Large",
-                    "Weight": 41
+                    "Weight": 45
                   },
                   {
                     "$NodeId": "WeightedPath-deadtree6b-ffff-0000-1111-222288889999",
                     "Path": "Trees/Ash_twisted_Giant",
-                    "Weight": 44
+                    "Weight": 40
                   },
                   {
                     "$NodeId": "WeightedPath-deadtree6c-ffff-0000-1111-222288889999",
