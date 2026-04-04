@@ -144,7 +144,7 @@
               },
               {
                 "$NodeId": "CurvePoint-8jf499ff-cb82-d643-a987-cb2276543c65",
-                "In": 0.75,
+                "In": 0.8,
                 "Out": 1
               },
               {
@@ -169,10 +169,10 @@
                   "$NodeId": "SimplexNoise2DDensityNode-3ea944cb-763d-810f-5432-76ed21098732",
                   "Type": "SimplexNoise2D",
                   "Skip": false,
-                  "Lacunarity": 1.6,
-                  "Persistence": 0.625,
+                  "Lacunarity": 1.4,
+                  "Persistence": 0.45,
                   "Octaves": 3,
-                  "Scale": 425,
+                  "Scale": 430,
                   "Seed": "terrain-mix"
                 }
               ]
