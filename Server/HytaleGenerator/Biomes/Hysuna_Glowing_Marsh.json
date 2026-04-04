@@ -86,7 +86,7 @@
                   },
                   {
                     "$NodeId": "CurvePoint-ea54ff76-2198-3cba-0fed-219876543287",
-                    "In": 36,
+                    "In": 32,
                     "Out": -1
                   }
                 ]
@@ -145,7 +145,7 @@
               {
                 "$NodeId": "CurvePoint-8jf499ff-cb82-d643-a987-cb2276543c65",
                 "In": 0.8,
-                "Out": 1
+                "Out": 0.85
               },
               {
                 "$NodeId": "CurvePoint-9kg5aaff-dc93-e754-ba98-dc3387654d76",
